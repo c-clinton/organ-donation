@@ -1,3 +1,34 @@
+
+.wrapper
+{
+	
+overflow: hidden;	
+	
+}
+
+
+@font-face {
+    font-family: 'keep_calm';
+    src: url(../fonts/keepcalm-medium-webfont.woff2) format('woff2'),
+         url(../fonts/keepcalm-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src:url(../fonts/opensans-regular-webfont.woff2) format('woff2'),
+         url(../fonts/opensans-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .boxhelper
 {
 
@@ -18,6 +49,8 @@ body
 	
 
 color: #a8a3aa;
+font-size: 1.125em;
+font-family: 'open_sans', Helvetica;
 	
 	
 }
@@ -58,11 +91,18 @@ margin-top: 4em;
 
 }
 
+h1,h2,h3,h4
+{
+	
+	
+font-family: 'keep_calm', arial;	
+	
+}
+
 h3
 {
 	
 color: #054f18;
-font-size: 1.5em;
 	
 	
 }
@@ -70,7 +110,7 @@ font-size: 1.5em;
 h1
 {
 
-font-size: 3em;	
+font-size: 2.7em;	
 margin-top: 1%;
 	
 }
@@ -82,11 +122,18 @@ h1, h2
 	
 }
 
-h2
+h2, h3, h4
 {
 	
-font-size: 1.5em;	
+font-size: 1.2em;	
 	
+}
+
+p
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	line-height: 2.5em;
 }
 
 .menustyle
@@ -132,7 +179,7 @@ min-height: 50%;
 background-color: #efefef; 
 background-image:url(../images/clockimg.jpg);
 background-size: cover;
-background-position:left;
+background-position: bottom-left;
 	
 	
 }
@@ -140,7 +187,7 @@ background-position:left;
 .whitebg
 {
 
-background-color: rgba(255,255,255, 0.9);	
+background-color: rgba(255,255,255, 0.9);
 	
 }
 
@@ -207,18 +254,18 @@ padding: 1em;
 	
 }
 
-.largeimgcon h1
-{
-		
-margin-top: 1em;
-
-	
-}
 
 .largeimgcon img
 {
 	
 margin-bottom: 3em;	
+	
+}
+
+.largeimgcon h1
+{
+
+margin-top: 1em;	
 	
 }
 
@@ -237,6 +284,21 @@ padding: 0.4em;
 	
 color: #ffffff;	
 	
+	
+}
+
+.space
+{
+	
+border-top: #efefef 7em solid;
+	
+}
+
+section:not(.largeimgcon)
+{
+	
+padding-top: 3%;
+padding-bottom: 3%;	
 	
 }
 
