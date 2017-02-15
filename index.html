@@ -9,13 +9,21 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+  
+   
+                        
+
+                  
 
     <header>
      
       
-	  <nav class="top-bar">
+	  <nav class="title-bar">
+       <div data-hide-for="medium" data-responsive-toggle="main">
+                        <button data-toggle="" type="button" class="menu-icon float-right"></button>
+      </div>
       <div class="row">
-      <ul class="no-bullet inline text-right">
+      <ul class="large-12 menu no-bullet inline columns">
       <li><a href="#" class="langtoggle">en/fr</a></li>
       <li><a href="#">Facebook</a></li>
       <li><a href="#">Twitter</a></li>
@@ -29,10 +37,10 @@
       <div class="menustyle">
       <div class="row">
       
-      <p class="logo small-3 columns">Logo</p>
+      <img class="logo small-6 medium-3 columns" src="images/logo.svg" alt="logo">
 
-      <nav class="medium-9 columns">
-      <ul class="no-bullet inline text-right">
+      <nav id="main" class="menu medium-9 columns">
+      <ul class="no-bullet inline" data-responsive-menu="accordion">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">Information</a></li>
       <li><a href="stories.html">Stories</a></li>
@@ -49,8 +57,8 @@
     <section class="ban">
     
     <div class="row">
-    <h2 class="show-for-medium medium-8 columns">Give us ur organs.</h2>
-    <p class="show-for-medium medium-4 columns">Button</p>
+    <h2 class="show-for-medium medium-9 columns">Give us ur organs.</h2>
+    <div id="regbut" class="show-for-medium medium-3 columns"><a href="#"><h4 class="text-center">Register or Check Now</h4></a></div>
     </div>
     
     </section>
@@ -59,15 +67,15 @@
     
       <section class="largeimgcon">
       <div class="row">
-      <div class="medium-6 medium-push-6 text-center columns">
+      <div class="whitebg medium-6 medium-push-6 text-center columns">
       <h1>Use Your Time Wisely</h1>
-      <p>becoming an organ donor takes three easy steps:</p>
+      <p>Becoming an organ donor takes three easy steps:</p>
       <h2>Have your health card number ready.</h2>
-      <p>Image</p>
+      <img class="small-4" src="images/healthcardicon.svg" alt="health card icon">
       <h2>Click 'Register or Check Now'.</h2>
-      <p>image</p>
+      <img class="small-4" src="images/mouseicon.svg" alt="mouse icon">
       <h2>Spread the word to save more lives.</h2>
-      <p>Image</p>
+     <img class="small-4" src="images/speaker.svg" alt="speaker icon">
       </div>
       </div>
       </section>
@@ -86,21 +94,31 @@
       
     </section>
     
-     <section class="row">
+     <section>
      
+     <div class="row">
       <h1 class="small-12 columns">Section 2 title</h1>
-      <p class="small-12 columns">Section 2 text</p>
-      <p class="small-12 columns">Section 2 image</p>
-      <p class="small-12 columns">Section 2 text</p>
+      <p class="small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. You can Spread the Word by encouraging your friends and family to register their consent to become organ and tissue donors.</p>
+      </div>
+      <img class="small-12" src="images/couple.jpg" alt="Being a donor could save the life of someone dear.">
+      <div class="row">
+      <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+</p>
+	   <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+</p>
+      </div>
       
     </section>
+    
+    <hr>
 
     <section class="row">
     
       <div class="small-12 columns">
       <h1 class="text-center">Social Media Title</h1>
-      <h2 class="text-center">Text</h2>
+      <h2 class="text-center">Organs Ipsum</h2>
       <p class="text-center">Icons</p>
+      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="#">Button</a></h3></div>
       </div>
       
     </section>
@@ -110,14 +128,17 @@
     <div class="row">
     
       <div class="small-12 medium-3 columns">
-      <p>footer Logo</p>
-      <p>This site is managed by Trillium Gift of Life Network, Ontario’s government agency responsible for organ and tissue donation and transplant. <a href="#">Learn More.
+      <img class="small-4 medium-8" src="images/GOL_logo.svg" alt="Gift of Life Network Logo">
+      <p>This site is managed by Trillium Gift of Life Network, Ontario’s government agency responsible for organ and tissue donation and transplantation. <a class="green" href="#">Learn More.
 </a></p>
       </div>
       
       <div class="small-12 medium-3 columns">
-      <nav>
-      <h3>Register Now</h3>
+      <div data-hide-for="medium" data-responsive-toggle="footerregister">
+                        <button data-toggle="" type="button" class="float-center"><h3>Register Now</h3></button>
+     </div>
+      <nav id="footerregister">
+      <h3 class="show-for-medium">Register Now</h3>
       <ul class="no-bullet">
       <li><a href="#">- Online Registration</a></li>
       <li><a href="#">- Find A Location</a></li>
@@ -128,8 +149,11 @@
       </div>
       
       <div class="small-12 medium-3 columns">
-      <nav>
-      <h3>About Us</h3>
+      <div data-hide-for="medium" data-responsive-toggle="footerabout">
+                        <button data-toggle="" type="button" class="float-center"><h3>About Us</h3></button>
+     </div>
+      <nav id="footerabout">
+      <h3 class="show-for-medium">About Us</h3>
       <ul class="no-bullet">
       <li><a href="about.html">- The Facts</a></li>
       <li><a href="about.html">- Donation Process</a></li>
@@ -142,8 +166,11 @@
       </div>
       
       <div class="small-12 medium-3 columns">
-      <nav>
-      <h3>Contact</h3>
+      <div data-hide-for="medium" data-responsive-toggle="footercontact">
+                        <button data-toggle="" type="button" class="float-center"><h3>Contact</h3></button>
+     </div>
+      <nav id="footercontact">
+      <h3 class="show-for-medium">Contact</h3>
       <ul class="no-bullet">
       <li>Trillium Gift of Life Network
 522 University Avenue, Suite 900
@@ -151,7 +178,7 @@ Toronto, ON M5G 1W7</li>
       <li>General inquiries
 1-800-263-2833
 416-363-4001 (Toronto)</li>
-      <li><a href="#">info@giftoflife.on.ca</a></li>
+      <li><a class="green" href="#">info@giftoflife.on.ca</a></li>
       <li>icons</li>
       </ul>
       </nav>

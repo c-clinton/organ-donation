@@ -22,7 +22,7 @@ color: #a8a3aa;
 	
 }
 
-footer, .top-bar, .top-bar ul
+footer, .title-bar, .title-bar ul
 {
 	
 background-color: #95b39b;
@@ -30,26 +30,48 @@ color: #ffffff;
 
 }
 
-.top-bar
+footer
 {
 	
-	padding: 0em;
+
+padding-top: 1em;
+margin-top: 4em;	
+	
 	
 }
 
-/*header *
+.title-bar, .title-bar ul, .title-bar a
 {
+	padding: 0em;
+	margin-bottom: 0em;
+	color: #ffffff;
 	
-	background-color: #efefef;
-	margin: 0em;
-	
-}*/
+}
+
+.title-bar li
+{
+
+	padding: 0em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	text-align: left;
+
+}
 
 h3
 {
 	
 color: #054f18;
+font-size: 1.5em;
 	
+	
+}
+
+h1
+{
+
+font-size: 3em;	
+margin-top: 1%;
 	
 }
 
@@ -60,10 +82,36 @@ h1, h2
 	
 }
 
+h2
+{
+	
+font-size: 1.5em;	
+	
+}
+
 .menustyle
 {
 	
 	background-color: #efefef;
+	padding-top: 0.5em;
+	
+}
+
+.menustyle li /*media query to fit on medium*/
+{
+	
+
+margin-left: 1%;
+margin-right: 1%;
+display: list-item;	
+text-align: center;	
+
+}
+
+.menustyle li:last-child
+{
+
+margin-right: -1%;	
 	
 }
 
@@ -80,8 +128,164 @@ h1, h2
 {
 	
 
-height: 50em;
+min-height: 50%;
 background-color: #efefef; 
+background-image:url(../images/clockimg.jpg);
+background-size: cover;
+background-position:left;
+	
+	
+}
+
+.whitebg
+{
+
+background-color: rgba(255,255,255, 0.9);	
+	
+}
+
+header a
+{
+		
+color: #787b7c;
+	
+}
+
+header a:hover /*media query hover classes later*/
+{
+	
+font-weight: bold;
+color: #787b7c;	
+	
+}
+
+footer a
+{
+	
+color: #f3f3f3;	
+	
+	
+}
+
+footer a:hover
+{
+	
+color: #787b7c;	
+	
+}
+
+.green
+{
+	
+color: #219b67;
+text-decoration: underline;	
+	
+}
+
+#regbut
+{
+	
+background-color: #ad485a;
+vertical-align: middle;	
+padding: 0.4em;
+border-radius: 1em;
+	
+}
+
+#regbut a
+{
+	
+color: #ffffff;	
+	
+	
+}
+
+.ban
+{
+	
+padding: 1em;	
+	
+}
+
+.largeimgcon h1
+{
+		
+margin-top: 1em;
+
+	
+}
+
+.largeimgcon img
+{
+	
+margin-bottom: 3em;	
+	
+}
+
+#drivebut
+{
+	
+background-color: #95b39b;
+vertical-align: middle;	
+padding: 0.4em;
+
+	
+}
+
+#drivebut a
+{
+	
+color: #ffffff;	
+	
+	
+}
+
+@media only screen AND (min-width: 40em){
+	
+	.menustyle ul, .title-bar ul
+{
+	
+text-align: right;		
+	
+}
+	
+.menustyle li
+{
+	
+display: inline;	
+		
+	
+}
+	
+	
+}
+
+@media only screen AND (min-width: 60em){
+	
+.menustyle li /*media query to fit on medium*/
+{
+	
+
+margin-left: 5%;
+margin-right: 5%;	
+	
+	
+}	
+
+
+	
+}
+
+@media only screen AND (min-width: 75em)
+{
+	
+	
+.whitebg
+{
+
+background-color: rgba(255,255,255, 0);	
+	
+}	
 	
 	
 }
