@@ -55,6 +55,40 @@ font-family: 'open_sans', Helvetica;
 	
 }
 
+.hidden
+{
+
+display: none;
+}
+
+.visible
+{
+
+display: block;
+
+}
+
+#introvid
+{
+
+position: relative;
+
+}
+
+#vidoverlay a
+{
+
+font-family: 'keep_calm';
+position: absolute;
+z-index: 2;
+padding: 1%;
+background-color: rgba(0,0,0, 0.6);
+bottom: 75;
+right: 0;
+color: #ffffff;
+
+}
+
 footer, .title-bar, .title-bar ul
 {
 	
@@ -101,10 +135,49 @@ font-family: 'keep_calm', arial;
 h3
 {
 	
-color: #054f18;
+color: #087223;
 	
 	
 }
+
+.number
+{
+
+width: 2.5em;
+height: 2.5em;
+padding-top: 0.4em;
+text-align: center;
+border-radius: 50%;
+color: #ffffff;
+background: #72b27e; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #72b27e 0%, #0e8221 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #72b27e 0%,#0e8221 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #72b27e 0%,#0e8221 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b27e', endColorstr='#0e8221',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+font-family: 'keep_calm';
+border: 0.1em  #087223 solid;
+}
+
+
+.circlebig
+{
+
+width: 5em;
+height: 5em;
+padding-top: 2em;
+text-align: center;
+border-radius: 50%;
+color: #ffffff;
+background: #72b27e; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #72b27e 0%, #0e8221 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #72b27e 0%,#0e8221 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #72b27e 0%,#0e8221 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b27e', endColorstr='#0e8221',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+font-family: 'keep_calm';
+border: 0.1em  #087223 solid;
+}
+
+
 
 h1
 {
@@ -193,10 +266,13 @@ font-size: 1.2em;
 	
 
 min-height: 50%;
-
-	
+background-color: #efefef; 
+background-image:url(../images/clockimg.jpg);
+background-size: cover;
+background-position: bottom-left;	
 	
 }
+	
 
 .whitebg
 {
@@ -381,6 +457,7 @@ background-color: rgba(0,0,0, 0.6);
 }
 
 
+
 @media only screen AND (min-width: 40em){
 	
 	h1
@@ -389,28 +466,22 @@ background-color: rgba(0,0,0, 0.6);
 font-size: 2.2em;		
 		
 	}
-	
-	.largeimgcon
-{
-	
-background-color: #efefef; 
-background-image:url(../images/clockimg.jpg);
-background-size: cover;
-background-position: bottom-left;	
-	
-}
+
 	
 	.menustyle ul, .title-bar ul
 {
 	
-text-align: right;		
+text-align: right;	
+margin-right: 3%;	
 	
 }
 	
 .menustyle li
 {
 	
-display: inline;	
+display: inline;
+margin-right: 0.5%;
+margin-left: 0.5%;	
 		
 	
 }
@@ -432,18 +503,14 @@ border-bottom: #CBCBCB 0.03em solid;
 {
 	
 
-margin-left: 5%;
-margin-right: 5%;	
+margin-left: 4%;	
 	
 	
 }	
 
-
-	
 }
 
-@media only screen AND (min-width: 75em)
-{
+@media only screen AND (min-width: 75em){
 	
 	
 .whitebg
@@ -453,7 +520,9 @@ background-color: rgba(255,255,255, 0);
 	
 }	
 	
-	
+
+
 }
+
 
 
