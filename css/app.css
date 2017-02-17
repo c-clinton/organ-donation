@@ -162,19 +162,45 @@ border: 0.1em  #087223 solid;
 .circlebig
 {
 
-width: 5em;
-height: 5em;
-padding-top: 2em;
+width: 15em;
+height: 15em;
+padding-top: 2.7em;
 text-align: center;
 border-radius: 50%;
-color: #ffffff;
-background: #72b27e; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, #72b27e 0%, #0e8221 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, #72b27e 0%,#0e8221 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, #72b27e 0%,#0e8221 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b27e', endColorstr='#0e8221',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #087223;
 font-family: 'keep_calm';
-border: 0.1em  #087223 solid;
+border: 0.5em  #087223 solid;
+}
+
+.textsmall
+{
+	
+	font-size: 0.8em;
+	
+	
+}
+
+.statnumbers
+{
+	
+	font-size: 2.5em;
+	
+}
+
+.redtext
+{
+	
+	
+color: #ad485a;	
+	
+}
+
+.statistics
+{
+	
+	margin-bottom: 5%;
+	
+	
 }
 
 
@@ -457,7 +483,6 @@ background-color: rgba(0,0,0, 0.6);
 }
 
 
-
 @media only screen AND (min-width: 40em){
 	
 	h1
@@ -493,8 +518,7 @@ border-bottom: #CBCBCB 0.03em solid;
 
 	
 }
-	
-	
+
 }
 
 @media only screen AND (min-width: 60em){
@@ -506,7 +530,7 @@ border-bottom: #CBCBCB 0.03em solid;
 margin-left: 4%;	
 	
 	
-}	
+}
 
 }
 
@@ -519,9 +543,48 @@ margin-left: 4%;
 background-color: rgba(255,255,255, 0);	
 	
 }	
+
+#missionimg
+{
+	
+margin-left: -10%;
+margin-right: 5%;
+	
+}
+	
 	
 
 
+}
+
+@media only screen AND (min-width: 80em)
+{
+	
+	
+#missionimg
+{
+	
+margin-left: -15%;
+margin-right: 5%;
+	
+}
+	
+	
+	
+}
+
+@media only screen AND (min-width: 90em)
+{
+	
+#missionimg
+{
+	
+margin-left: -25%;
+margin-right: 5%;
+	
+}	
+	
+	
 }
 
 
