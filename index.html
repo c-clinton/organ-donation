@@ -39,9 +39,9 @@
       <div class="menustyle">
       <div class="row">
       
-      <img class="logo small-6 medium-3 columns" src="images/logo.svg" alt="logo">
+      <a href="index.html"><img class="logo small-6 medium-3 large-2 columns" src="images/logo.svg" alt="logo"></a>
 
-      <nav id="main" class="menu medium-9 columns">
+      <nav id="main" class="menu medium-9 large-10 columns">
       <ul class="no-bullet inline" data-responsive-menu="accordion">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">Information</a></li>
@@ -66,6 +66,8 @@
     
     </section>
     
+    <main>
+    
     <section id="introvid" class="visible">
     <h1 class="hidden">Welcome</h1>
       <div id="vidoverlay">
@@ -73,7 +75,7 @@
           Skip Video
         </a>
       </div>
-       <video controls width="100%" height="auto" autoplay>
+       <video id="vid" controls width="100%" height="auto" autoplay>
      <source class="flex-video" src="video/introvid.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
@@ -99,30 +101,35 @@
      
       <h1 class="show-for-small-only small-12 columns">Our Mission</h1>
       <img class="show-for-small-only small-12 columns" src="images/mission.jpg" alt="Becoming an organ donor saves lives and families.">
-      <p class="show-for-small-only small-12 columns">Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time.  But you can help. When you register your consent for organ and tissue donation, you let those waiting know that you would help them if you could.</p>
+      <p class="show-for-small-only small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done.</p>
+       <p class="show-for-small-only small-12 columns">Our aim is to spread awareness of the need for organ donors, provide <a href="about.html" class="green">information</a> on donor registration, and chronicle the stories of real organ-transplant recipients and how their lives have changed thanks to the kindness of Ontarian donors.</p>
       
       <img src="images/mission.jpg"  id="missionimg" alt="Becoming an organ donor saves lives and families." class="show-for-medium medium-6 columns">
+      <div class="medium-6 show-for-medium columns">
       <h1>Our Mission</h1>
-      <p>Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time.  But you can help. When you register your consent for organ and tissue donation, you let those waiting know that you would help them if you could.  </p>
+      <p >Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors.</p>
 
+	<p>We aim to share <a href="about.html" class="green">information</a> on donor registration, and chronicle the stories of real organ-transplant recipients and how their lives have changed thanks to the kindness of Ontarian donors.</p>
+    </div>
       
     </section>
+    </div>
   
     
      <div class="space">
      <section>
      
      <div class="row">
-      <h1 class="small-12 columns">Stories</h1>
-      <p class="small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. You can Spread the Word by encouraging your friends and family to register their consent to become organ and tissue donors.</p>
+      <h1 class="small-12 columns">Getting Involved</h1>
+      <p class="small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done.</p>
       </div>
       <img class="small-12" src="images/couple.jpg" alt="Being a donor could save the life of someone dear.">
       <div class="row">
-      <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+      <p class="small-12 columns">You can Spread the Word by encouraging your friends and family to register their consent to become organ and tissue donors. The best way to get involved is by registering your consent to bcome an organ donor. After you have registered, you can further promote the cause by starting a personal or organizational drive to encourage friends, family, and others to register their consent. It's easy to start your own registration drive, you can do it as an individual or on behalf of your company or community group. Click here to learn how to start your own drive. 
 </p>
 		<hr class="small-2">
         
-	   <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+	   <p class="small-12 columns">You can also spread the word by sharing the link to this website or to the ServiceOntario registration page on your social media platform of choice. Remind your friends to #useyourtimewisely and #take2minutes to register and potentially save up to 8 lives.
 </p>
       </div>
       
@@ -131,25 +138,26 @@
     
     <hr>
 
-    <section class="row">
+    <section id="share" class="row">
     
       <div class="small-12 columns">
       <h1 class="text-center">Spread the Word</h1>
-      <h2 class="text-center">Organs Ipsum</h2>
       <div class="small-centered text-center small-12 medium-6">
       <a href="#"><img src="images/fb_colored.png" alt="facebook"></a>
       <a href="#"><img src="images/tw_colored.png" alt="twitter"></a>
       <a href="#"><img src="images/yt_colored.png" alt="youtube"></a>
+      <h2 class="text-center">You can also get involved by starting a drive of your own. Click below to learn more.</h2>
       </div>
-      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="#">Start a Drive</a></h3></div>
+      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="drives.html">Start a Drive</a></h3></div>
       </div>
       
     </section>
-
+	
+      
+      </main>
+      
+      
       <footer>
-
-    
-
     <div class="row">
 
     

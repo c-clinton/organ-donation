@@ -5,21 +5,36 @@ $(document).foundation();
 
 	"use strict";
 
-	var vid = document.querySelector('#introvid');
+	var vidcon = document.querySelector('#introvid');
+	var vid = document.querySelector('#vid');
 	var header = document.querySelector('.largeimgcon');
 	var skip = document.querySelector('#skip');
 
 	function showheader(evt){
 
 	evt.preventDefault();
-	vid.classList.add("hidden");
-	vid.classList.remove("visible");
+	vidcon.classList.add("hidden");
+	vidcon.classList.remove("visible");
+	header.classList.add("visible");
+	header.classList.remove("hidden");
+	}
+	
+	function stopvid(e){
+		
+	e.preventDefault();
+		
+	vid.pause();
+	
+	console.log("Fuck my life.");
+	
+	vidcon.classList.add("hidden");
+	vidcon.classList.remove("visible");
 	header.classList.add("visible");
 	header.classList.remove("hidden");
 	}
 
-	skip.addEventListener("click", showheader, false);
-	vid.addEventListener("ended", showheader, false);
+	skip.addEventListener("click", stopvid, false);
+	vidcon.addEventListener("ended", showheader, false);
 
 
 })();
