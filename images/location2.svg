@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="288.889px" height="258.586px" viewBox="0 0 288.889 258.586" enable-background="new 0 0 288.889 258.586"
+	 xml:space="preserve">
+<g>
+	<path fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M136.536,26.273
+		c-1.101,0.32-2.181,0.73-3.29,0.95c-27.021,5.43-44.98,21.24-53.58,47.36c-6.13,18.64-2.011,36.48,5.22,53.92
+		c14.46,34.88,35.46,65.8,58.101,95.72c0.381,0.49,0.909,0.859,1.641,1.551c1.188-1.42,2.34-2.58,3.25-3.9
+		c10.25-14.76,20.85-29.29,30.58-44.38c12.62-19.609,23.45-40.19,30.51-62.59c11.63-36.92-9.16-75.76-46.33-86.17
+		c-3.34-0.93-6.729-1.64-10.1-2.46"/>
+	<path fill="#96B49C" d="M152.536,26.273c3.369,0.82,6.76,1.53,10.1,2.46c37.17,10.41,57.96,49.25,46.33,86.17
+		c-7.06,22.4-17.89,42.98-30.51,62.59c-9.73,15.09-20.33,29.62-30.58,44.38c-0.91,1.32-2.062,2.48-3.25,3.9
+		c-0.73-0.69-1.26-1.061-1.641-1.551c-22.641-29.92-43.641-60.84-58.101-95.72c-7.23-17.44-11.35-35.28-5.22-53.92
+		c8.6-26.12,26.56-41.93,53.58-47.36c1.109-0.22,2.189-0.63,3.29-0.95C141.866,26.273,147.196,26.273,152.536,26.273z"/>
+	<path fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M144.576,60.933
+		c-18.381-0.02-33.07,14.56-33.131,32.89c-0.06,18.3,14.57,33.2,32.78,33.36c18.4,0.17,33.4-14.77,33.38-33.26
+		C177.585,75.593,162.935,60.963,144.576,60.933z"/>
+	<path fill="#FFFFFF" d="M144.576,60.933c18.358,0.03,33.01,14.66,33.028,32.99c0.021,18.49-14.979,33.43-33.38,33.26
+		c-18.209-0.16-32.84-15.06-32.78-33.36C111.505,75.493,126.195,60.913,144.576,60.933z"/>
+</g>
+<image display="none" overflow="visible" enable-background="new    " width="626" height="626" xlink:href="../../Supreme/development materials/phone.jpg"  transform="matrix(0.3376 0 0 0.3376 38.7766 18.0752)">
+</image>
+<image display="none" overflow="visible" enable-background="new    " width="512" height="512" xlink:href="../../Supreme/development materials/Email-Icon.png"  transform="matrix(0.5004 0 0 0.5004 16.3489 1.1963)">
+</image>
+</svg>

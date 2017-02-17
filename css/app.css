@@ -83,7 +83,7 @@ position: absolute;
 z-index: 2;
 padding: 1%;
 background-color: rgba(0,0,0, 0.6);
-bottom: 75;
+bottom: 85%;
 right: 0;
 color: #ffffff;
 
@@ -124,7 +124,7 @@ margin-top: 4em;
 
 }
 
-h1,h2,h3,h4
+h1,h2,h3,h4, footer button
 {
 	
 	
@@ -132,7 +132,7 @@ font-family: 'keep_calm', arial;
 	
 }
 
-h3
+h3, footer button
 {
 	
 color: #087223;
@@ -140,8 +140,15 @@ color: #087223;
 	
 }
 
-.number
+footer button
 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+}
+
+
+.circlenumbers{
 
 width: 2.5em;
 height: 2.5em;
@@ -328,7 +335,7 @@ margin-right: -0.09em;
 footer a
 {
 	
-color: #f3f3f3;	
+color: #f3f3f3 !important;	
 	
 	
 }
@@ -343,7 +350,7 @@ color: #787b7c;
 .green
 {
 	
-color: #219b67;
+color: #219b67 !important;
 text-decoration: underline;	
 	
 }
@@ -365,9 +372,6 @@ color: #ffffff;
 	
 	
 }
-
-
-
 
 .largeimgcon img
 {
@@ -483,77 +487,1075 @@ background-color: rgba(0,0,0, 0.6);
 }
 
 
+/*------------------------------------------------------*/
+.title-bar ul li a:hover
+{
+
+opacity: 0.5;
+	
+}
+
+.title-bar ul li 
+{
+
+padding: 5px 2px 5px 2px;
+	
+}
+
+
+
+#en-fr {
+	font-size: 15px;
+	padding-right: 0;
+}
+
+#section1img {
+	padding-right: 20px;
+}
+
+
+
+
+
+fieldset {
+	border: solid 2px #054f18;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	background-color: #96b49c;
+	color: black;
+}
+
+#contactUs li {
+	list-style: none;
+	margin-top: 1em;
+} 
+
+#contactForm label {
+	color: #054f18;
+	font-size: 15px;
+}
+
+
+#contactForm input {
+	border: solid 2px #c3d8c6;
+	border-radius: 5px;
+}
+
+
+form h3{
+	color: white;
+	
+}
+
+
+#contactUs {
+	text-align: center;
+}
+
+ul {
+	margin: 0 auto;
+	display: block;
+}
+
+#submit {
+	border-radius: 10px;
+	padding: 5px 25px 5px 25px;
+	color: #96b49c;
+	font-size: 15px;
+	background-color: white;
+	display:block;
+	margin: 0 auto;
+}
+
+#submit:hover {
+	color: #054f18;
+	border: solid 2px #054f18;
+	
+}
+
+
+
+#contactInfo {
+	margin-top: 35px;
+	border-top: solid 2px green;
+}
+
+#contactInfo h3 {
+	font-size: 2em;
+}
+
+#smallMap {
+	margin-top: 10px;
+}
+
+.contactText {
+	line-height: 1.5;
+}
+.contactText2 {
+	line-height: 2;
+}
+
+#footerLogo {
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#footerInfo  {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footerDrop li {
+	line-height: 2;
+}
+
+
+.footerDrop li a {
+	color: #ffffff !important;
+}
+
+
+.footerDrop li:last-child {
+	margin-bottom: 1em;
+}
+
+.dropBut {
+	margin-bottom: 10px;
+}
+
+.text1 {
+	font-size: 17px;
+	color: black;
+	margin-top: 1.5em;
+}
+
+#trill {
+	margin-top: 10px;
+}
+
+
+#contactBody {
+	border-top: solid 2px green;
+	margin-top: 20px;
+}
+
+#line {
+	margin-top: 20px;
+}
+
+#connect h2 {
+	color: #054f18;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#connect h4 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	margin-bottom: 2em;
+}
+
+#connectLG h2 {
+	color: #054f18;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+}
+
+#connectLG h4 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	margin-bottom: 2em;
+}
+
+
+
+.top {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.top:hover {
+	color: green;
+}
+
+a:visited {
+	color: #96b49c;
+}
+
+.sms:hover {
+	opacity: 0.6;
+	transform: scale(0.9,0.9);
+}
+
+/*--------------------------------drives-------------*/
+
+.button {
+
+	border: solid 1px;
+
+	border-radius: 10px;
+
+	width: 150px;
+
+	height: 40px;
+
+	background-color: #96b49c;
+
+	color: white;
+
+	margin-top: 10px;
+
+}
+
+
+
+.button:hover {
+
+	opacity: 0.6;
+
+	background-color: #a8a3aa;
+
+	transform: scale(0.9,0.9);
+
+}
+
+
+
+
+
+#drivesTop h2 {
+
+	font-size: 1.5em;
+
+	color: #054f18;
+
+}
+
+
+
+#drivesTop {
+
+	border-top: solid 2px green;
+
+	border-bottom: solid 2px green;
+
+	margin-top: 25px;
+
+}
+
+
+
+.text2 {
+
+	line-height: 2;
+
+	font-size: 14px;
+
+}
+
+
+
+#drivesOverview {
+
+	margin-top: 10px;
+
+}
+
+
+
+#drivesTop .green {
+
+	font-size: 12px;
+
+	text-decoration: none;
+
+}
+
+
+
+#drivesTop .h3 {
+
+	color: #96b49c;
+
+}
+
+
+
+#group h2 {
+
+	margin-top: 30px;
+
+}
+
+
+
+.h2 {
+
+	font-size: 1.2em;
+
+	color: #054f18;
+
+}
+
+
+
+#tips li {
+
+	margin-top: 40px;
+
+}
+
+
+
+#driveTips img {
+
+	margin-bottom: 5px;
+
+}
+
+
+
+#measure p {
+
+	margin-top: 15px;
+
+}
+
+
+
+#measure {
+
+	margin-top: 20px;
+
+	border-bottom: solid 2px green;
+
+}
+
+
+
+.connect h2 {
+
+	color: #054f18;
+
+	margin-top: 5px;
+
+	margin-bottom: 15px;
+
+}
+
+
+
+.connect h4 {
+
+	font-size: 12px;
+
+	font-weight: normal;
+
+	color: #666;
+
+	margin-bottom: 2em;
+
+}
+
+
+
+.connectLG h2 {
+
+	color: #054f18;
+
+	margin-bottom: 15px;
+
+	font-size: 1.5em;
+
+}
+
+
+
+.connectLG h4 {
+
+	font-size: 12px;
+
+	font-weight: normal;
+
+	color: #666;
+
+	margin-bottom: 2em;
+
+}
+
+
+
+
+
+.mobileDrives li {
+
+	margin-top: 10px;
+
+	color: #888;
+
+	list-style: none;
+
+}
+
+
+
+.driveLink {
+
+	font-size: 20px;
+
+	text-decoration: none;
+
+}
+
+
+
+.driveLink:hover {
+
+	text-decoration: underline;
+
+	color: #219b67;
+
+	opacity: 0.6;
+
+}
+
+
+
+.firstDrive {
+
+	margin-top: 20px;
+
+}
+
+
+
+#currentDrives div:not(.firstDrive){
+
+	margin-top: 40px;
+
+}
+
+
+
+.display {
+
+	margin-top: 40px;
+
+}
+
+
+
+#currentDrives .text1 {
+
+	color: #219b67;
+
+}
+
+
+
+.text3 {
+
+	display: inline;
+
+	font-size: 14px;
+
+	text-align: center;
+
+}
+
+
+
+#currentDrives h4 {
+
+	font-size: 12px;
+
+}
+
+
+
+#currentDrives button:active {
+
+	background-color: #96b49c;
+
+}
+
+
+
+.sub {
+
+	font-size: 12px;
+
+	color: #888;
+
+	text-align: center;
+
+	margin: 15px 0 10px 0px;
+
+}
+
+
+
+
+
+.drive {
+
+	margin-top: 40px;
+
+}
+
+
+
+#favDrives {
+
+	border-top: solid 2px green;
+
+}
+
+
+
+#breakdown {
+
+	border-top: solid 2px green;
+
+	border-bottom: solid 2px green;
+
+	padding: 10px 0 20px 0;
+
+}
+
+
+
+.breakdown li {
+
+	display: inline;
+
+}
+
+
+
+.number {
+
+	margin-top: 10px;
+
+}
+
+
+
+.text4 {
+
+	line-height: 1.5;
+
+	font-size: 14px;
+
+	color: #666;
+
+}
+
+
+
+.percent {
+
+	font-size: 16px;
+
+}
+
+
+
+
+
+#total {
+
+	font-size: 20px;
+
+	margin-top: 5px;
+
+}
+
+
+
+#breakdown div {
+
+	margin-top: 20px;
+
+}
+
+
+
+#janine {
+
+	width: 40%;
+
+}
+
+
+
+#angels {
+
+	width: 50%;
+
+}
+
+
+
+#ashley {
+
+	margin-top: 40px;
+
+}
+
+
+
+#jan {
+
+	margin-top: 25px;
+
+}
+
+
+
+#newClicks button {
+
+	margin: 0;
+
+	text-align: center;
+
+}
+
+
+
+#newClicks {
+
+	border-bottom: solid 2px green;
+
+	padding-bottom: 20px;
+
+}
+
+
+
+.emphasis {
+
+	color: green;
+
+	font-size: 1em;
+
+	line-height: 1.5;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen AND (min-width: 40em){
-	
-	h1
-	{
-
-font-size: 2.2em;		
-		
-	}
 
 	
+
 	.menustyle ul, .title-bar ul
+
 {
+
 	
-text-align: right;	
-margin-right: 3%;	
+
+text-align: right;		
+
 	
+
 }
+
 	
+
 .menustyle li
+
 {
+
 	
-display: inline;
-margin-right: 0.5%;
-margin-left: 0.5%;	
+
+display: inline;	
+
 		
+
 	
+
 }
+
+
 
 .ban
+
 {
+
+
 
 border-bottom: #CBCBCB 0.03em solid;
 
+
+
 	
-}
 
 }
+
+
+
+.sms {
+
+	transform: scale(0.7,0.7);
+
+}
+
+
+
+.sms:hover {
+
+	transform: scale(0.6,0.6);
+
+}
+
+
+
+#group h2 {
+
+	margin-top: 0;
+
+}
+
+
+
+.number {
+
+	font-size: 20px;
+
+	margin: 0;
+
+}
+
+
+
+.percent {
+
+	margin: 0;
+
+}
+
+
+
+
+
+.text4 {
+
+	font-size: 15px;
+
+}
+
+
+
+#driveTips {
+
+	border-top: solid 2px green;
+
+}
+
+
+
+#measure {
+
+	border-top: solid 2px green;
+
+}
+
+
+
+.text2 {
+
+	font-size: 10px;
+
+}
+
+
+
+#what {
+
+	margin-bottom: 20px;
+
+}
+
+
+
+	
+
+}
+
+
+
+
+
+@media only screen AND (min-width: 50em){
+
+	.text2 {
+
+	font-size: 13px;
+
+}
+
+
+
+#what {
+
+	margin-bottom: 20px;
+
+}
+
+
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen AND (min-width: 60em){
+
 	
+
 .menustyle li /*media query to fit on medium*/
-{
-	
 
-margin-left: 4%;	
-	
-	
-}
-
-}
-
-@media only screen AND (min-width: 75em){
-	
-	
-.whitebg
 {
 
-background-color: rgba(255,255,255, 0);	
 	
+
+
+
+margin-left: 5%;
+
+margin-right: 5%;	
+
+	
+
+	
+
 }	
 
-#missionimg
-{
-	
-margin-left: -10%;
-margin-right: 5%;
-	
+
+
+#connectLG {
+
+	margin-top: -40px;
+
 }
-	
+
+
+
+.sms {
+
+	transform: scale(0.4,0.4);
+
+}
+
+
+
+.sms:hover {
+
+	transform: scale(0.3,0.3);
+
+}
+
+
+
+
+
+#group h2 {
+
+	margin-top: 0;
+
+}
+
+
+
+.percent {
+
+	margin: 10px;
+
+}
+
+
+
+.text4 {
+
+	font-size: 18px;
+
+}
+
+
+
+#driveTips {
+
+	border-top: solid 2px green;
+
+}
+
+
+
+#how {
+
+	margin-top: 80px;
+
+}
+
+
+
+
+
+.text2 {
+
+	font-size: 16px;
+
+}
+
+
+
+#what {
+
+	margin-bottom: 40px;
+
+}
+
+
+
+
+
+}
+
+
+
+@media only screen AND (min-width: 75em)
+
+{
+
 	
 
+	
+
+.whitebg
+
+{
+
+
+
+background-color: rgba(255,255,255, 0);	
+
+	
+
+}	
+
+
+
+.sms {
+
+	transform: scale(0.5,0.5);
+
+}
+
+
+
+.sms:hover {
+
+	transform: scale(0.4,0.4);
+
+}
+
+
+
+.number {
+
+	font-size: 30px;
+
+}
+
+
+
+#total {
+
+	font-size: 30px;
+
+}
+
+
+
+.text4 {
+
+	font-size: 20px;
+
+	color: #666;
+
+}
+
+
+
+#drive-sub {
+
+	text-align: center;
+
+	padding: 0 50px 0 50px;
+
+	font-size: 16px;
+
+}
+
+
+
+#how {
+
+	margin-top: 110px;
+
+}
+
+
+
+
+
+.text2 {
+
+	font-size: 18px;
+
+}
+
+
+
+#what {
+
+	margin-bottom: 40px;
+
+}
+
+
+
+	
 
 }
 
