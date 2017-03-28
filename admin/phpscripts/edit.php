@@ -29,13 +29,13 @@ foreach($_POST as $label=>$value) {
 
 $qstring .= "WHERE {$col}={$id}"; //no quotes around {$integers}
 
-//echo $qstring;
+echo $qstring;
 
 $updateQuery = mysqli_query($link, $qstring);
 
 if($updateQuery){
 	
-	header("Location: ../../index.php");
+	header("Location: ../../index.html");
 	
 }else{
 	

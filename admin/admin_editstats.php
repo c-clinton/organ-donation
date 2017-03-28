@@ -8,8 +8,8 @@
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
 	
-	$tbl = "tbl_home";
-	$col = "home_id";
+	$tbl = "tbl_drivestats";
+	$col = "drivestats_id";
 	$id = 1;
 
 ?>

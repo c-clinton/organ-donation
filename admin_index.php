@@ -45,13 +45,16 @@
     
     <p><a class="link" href="admin_edituser.php">Edit User</a></p>
     
-    <p><a class="link" href="/admin/admin_editall.php">Edit Home Text</a>
+    <p><a class="link" href="admin/admin_edithome.php">Edit Home Text</a>
+    <p><a class="link" href="admin/admin_editinfo.php">Update Info Stats</a>
+    <p><a class="link" href="admin/admin_editstats.php">Update Drive Stats</a>
+    <p><a class="link" href="admin/admin_editcontact.php">Update Contact Info</a>
     
     <div class="smallbut importantbut"><a href="admin/phpscripts/caller.php?caller_id=logout">Log Out</a></div>
     
    </section>
    
    </div>
- <script src="js/app.js"></script>   
+ <script src="js/date.js"></script>   
 </body>
 </html>
