@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be a Donor</title>
+    <title>Welcome - Trillium Gift of Life Network</title>
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
@@ -25,7 +25,7 @@
       <li><a href="#"><img src="images/fb_small.svg" alt="fb icon"></a></li>
       <li><a href="#"><img src="images/tw_small.svg" alt="twitter icon"></a></li>
       <li><a href="#"><img src="images/yt_small.svg" alt="youtube icon"></a></li>
-      <li class="show-for-medium"><a href="#">Sign In</a></li>
+      <li class="show-for-medium"><a href="admin_login.php">Sign In</a></li>
       </ul>
       
        
@@ -39,9 +39,9 @@
       <div class="menustyle">
       <div class="row">
       
-      <img class="logo small-6 medium-3 columns" src="images/logo.svg" alt="logo">
+      <a href="index.html"><img class="logo small-6 medium-3 large-2 columns" src="images/logo.svg" alt="logo"></a>
 
-      <nav id="main" class="menu medium-9 columns">
+      <nav id="main" class="menu medium-9 large-10 columns">
       <ul class="no-bullet inline" data-responsive-menu="accordion">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">Information</a></li>
@@ -60,22 +60,23 @@
     <section class="ban">
     
     <div class="row">
-    <h2 class="show-for-medium medium-9 columns">Give us ur organs.</h2>
-    <div id="regbut" class="small-10 small-pull-1 medium-3 medium-pull-0 columns"><a href="#"><h4 class="text-center">Register or Check Now</h4></a></div>
+    <h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
+    <div id="regbut" class="show-for-medium medium-3 columns"><a href="#"><h4 class="text-center">Register or Check Now</h4></a></div>
     </div>
     
     </section>
     
+    <main>
+    
     <section id="introvid" class="visible">
+    <h1 class="hidden">Welcome</h1>
       <div id="vidoverlay">
         <a href="#" id="skip">
           Skip Video
         </a>
       </div>
-       <video controls width="100%" height="auto" autoplay>
-     <source class="flex-video" src="video/introvid.mp4" type="video/mp4"></source>
-     <source class="flex-video" src="video/introvid.ogv" type="video/ogg"></source>
-     <source class="flex-video" src="video/introvid.webm" type="video/webm"></source>
+       <video id="vid" controls width="100%" height="auto" autoplay>
+     <source class="flex-video" src="video/introvid.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
   </section>
@@ -100,30 +101,35 @@
      
       <h1 class="show-for-small-only small-12 columns">Our Mission</h1>
       <img class="show-for-small-only small-12 columns" src="images/mission.jpg" alt="Becoming an organ donor saves lives and families.">
-      <p class="show-for-small-only small-12 columns">Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time.  But you can help. When you register your consent for organ and tissue donation, you let those waiting know that you would help them if you could.</p>
+      <p class="show-for-small-only small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done.</p>
+       <p class="show-for-small-only small-12 columns">Our aim is to spread awareness of the need for organ donors, provide <a href="about.html" class="green">information</a> on donor registration, and chronicle the stories of real organ-transplant recipients and how their lives have changed thanks to the kindness of Ontarian donors.</p>
       
       <img src="images/mission.jpg"  id="missionimg" alt="Becoming an organ donor saves lives and families." class="show-for-medium medium-6 columns">
+      <div class="medium-6 show-for-medium columns">
       <h1>Our Mission</h1>
-      <p>Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. This is their only treatment option, and every 3 days someone will die because they did not get their transplant in time.  But you can help. When you register your consent for organ and tissue donation, you let those waiting know that you would help them if you could.  </p>
+      <p >Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors.</p>
 
+	<p>We aim to share <a href="about.html" class="green">information</a> on donor registration, and chronicle the stories of real organ-transplant recipients and how their lives have changed thanks to the kindness of Ontarian donors.</p>
+    </div>
       
     </section>
+    </div>
   
     
      <div class="space">
      <section>
      
      <div class="row">
-      <h1 class="small-12 columns">Stories</h1>
-      <p class="small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. You can Spread the Word by encouraging your friends and family to register their consent to become organ and tissue donors.</p>
+      <h1 class="small-12 columns">Getting Involved</h1>
+      <p class="small-12 columns">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done.</p>
       </div>
       <img class="small-12" src="images/couple.jpg" alt="Being a donor could save the life of someone dear.">
       <div class="row">
-      <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+      <p class="small-12 columns">You can Spread the Word by encouraging your friends and family to register their consent to become organ and tissue donors. The best way to get involved is by registering your consent to bcome an organ donor. After you have registered, you can further promote the cause by starting a personal or organizational drive to encourage friends, family, and others to register their consent. It's easy to start your own registration drive, you can do it as an individual or on behalf of your company or community group. Click here to learn how to start your own drive. 
 </p>
 		<hr class="small-2">
         
-	   <p class="small-12 columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur augue non dui sodales, placerat auctor sem vestibulum. Nulla in risus vel leo aliquet cursus. Vivamus et semper felis. Vivamus purus felis, venenatis eget placerat in, molestie quis arcu. Nam a libero pulvinar velit efficitur sagittis non vitae risus. Praesent ex nisl, posuere vel nisi non, sagittis semper tortor. In pharetra elit at purus venenatis pharetra. 
+	   <p class="small-12 columns">You can also spread the word by sharing the link to this website or to the ServiceOntario registration page on your social media platform of choice. Remind your friends to #useyourtimewisely and #take2minutes to register and potentially save up to 8 lives.
 </p>
       </div>
       
@@ -132,88 +138,155 @@
     
     <hr>
 
-    <section class="row">
+    <section id="share" class="row">
     
       <div class="small-12 columns">
       <h1 class="text-center">Spread the Word</h1>
-      <h2 class="text-center">Organs Ipsum</h2>
       <div class="small-centered text-center small-12 medium-6">
       <a href="#"><img src="images/fb_colored.png" alt="facebook"></a>
       <a href="#"><img src="images/tw_colored.png" alt="twitter"></a>
       <a href="#"><img src="images/yt_colored.png" alt="youtube"></a>
+      <h2 class="text-center">You can also get involved by starting a drive of your own. Click below to learn more.</h2>
       </div>
-      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="#">Start a Drive</a></h3></div>
+      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="drives.html">Start a Drive</a></h3></div>
       </div>
       
     </section>
-
-    <footer>
-    
+	
+      
+      </main>
+      
+      
+      <footer>
     <div class="row">
+
     
+
       <div class="small-12 medium-3 columns">
+
       <ul class="no-bullet">
-      <li><img class="small-4 medium-8" src="images/GOL_logo.svg" alt="Gift of Life Network Logo"></li>
-      <li>This site is managed by Trillium Gift of Life Network, Ontario’s government agency responsible for organ and tissue donation and transplantation. <a class="green" href="#">Learn More.
+
+      <li><img class="small-8 small-centered medium-8" src="images/GOL_logo.svg" alt="Gift of Life Network Logo" id="footerLogo"></li>
+
+      <li id="footerInfo">This site is managed by Trillium Gift of Life Network, Ontario’s government agency responsible for organ and tissue donation and transplantation. <a class="green" href="#">Learn More.
+
 </a></li>
+
       </ul>
+
       </div>
+
       
+
       <div class="small-12 medium-3 columns">
+
       <div data-hide-for="medium" data-responsive-toggle="footerregister">
-                        <button data-toggle="" type="button" class="float-center"><h3>Register Now</h3></button>
+
+                        <button data-toggle="" type="button" class="float-center dropBut">Register Now</button>
+
      </div>
+
       <nav id="footerregister">
+
       <h3 class="show-for-medium">Register Now</h3>
-      <ul class="no-bullet">
+
+      <ul class="no-bullet footerDrop">
+
       <li><a href="#">- Online Registration</a></li>
+
       <li><a href="#">- Find A Location</a></li>
+
       <li><a href="#">- Download Form (PDF)</a></li>
+
       <li><a href="#">- Registration Info</a></li>
+
       </ul>
+
       </nav>
+
       </div>
+
       
+
       <div class="small-12 medium-3 columns">
+
       <div data-hide-for="medium" data-responsive-toggle="footerabout">
-                        <button data-toggle="" type="button" class="float-center"><h3>About Us</h3></button>
+
+                        <button data-toggle="" type="button" class="float-center dropBut">About Us</button>
+
      </div>
+
       <nav id="footerabout">
+
       <h3 class="show-for-medium">About Us</h3>
-      <ul class="no-bullet">
+
+      <ul class="no-bullet footerDrop">
+
       <li><a href="about.html">- The Facts</a></li>
+
       <li><a href="about.html">- Donation Process</a></li>
+
       <li><a href="drives.html">- Donor Drives</a></li>
+
       <li><a href="stories.html">- Stories</a></li>
+
       <li><a href="about.html">- FAQ’s</a></li>
+
       <li><a href="#">- Media Releases 2017</a></li>
+
       </ul>
+
       </nav>
+
       </div>
+
       
+
       <div class="small-12 medium-3 columns">
+
       <div data-hide-for="medium" data-responsive-toggle="footercontact">
-                        <button data-toggle="" type="button" class="float-center"><h3>Contact</h3></button>
+
+                        <button data-toggle="" type="button" class="float-center dropBut">Contact</button>
+
      </div>
+
       <nav id="footercontact">
+
       <h3 class="show-for-medium">Contact</h3>
-      <ul class="no-bullet">
+
+      <ul class="no-bullet footerDrop">
+
       <li>Trillium Gift of Life Network
+
 522 University Avenue, Suite 900
+
 Toronto, ON M5G 1W7</li>
+
       <li>General inquiries
+
 1-800-263-2833
+
 416-363-4001 (Toronto)</li>
+
       <li><a class="green" href="#">info@giftoflife.on.ca</a></li>
+
       <li class="icons"><a href="#"><img src="images/fb_small.svg" alt="fb icon"></a> <a href="#"><img src="images/tw_small.svg" alt="twitter icon"></a> <a href="#"><img src="images/yt_small.svg" alt="youtube icon"></a></li>
+
       </ul>
+
       </nav>
+
       </div>
+
       
+
       </div>
+
       
+
     </footer>
     
+    </div>
     </div>
 
 
