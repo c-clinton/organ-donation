@@ -1,0 +1,459 @@
+
+.wrapper
+{
+	
+overflow: hidden;	
+	
+}
+
+
+@font-face {
+    font-family: 'keep_calm';
+    src: url(../fonts/keepcalm-medium-webfont.woff2) format('woff2'),
+         url(../fonts/keepcalm-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src:url(../fonts/opensans-regular-webfont.woff2) format('woff2'),
+         url(../fonts/opensans-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.boxhelper
+{
+
+background-color: #000000;
+color: #ffffff;
+
+}
+
+.inline li
+{
+	
+display: inline-block;
+	
+}
+
+body 
+{
+	
+
+color: #a8a3aa;
+font-size: 1.125em;
+font-family: 'open_sans', Helvetica;
+	
+	
+}
+
+footer, .title-bar, .title-bar ul
+{
+	
+background-color: #95b39b;
+color: #ffffff;
+
+}
+
+footer
+{
+	
+
+padding-top: 1em;
+margin-top: 4em;	
+	
+	
+}
+
+.title-bar, .title-bar ul, .title-bar a
+{
+	padding: 0em;
+	margin-bottom: 0em;
+	color: #ffffff;
+	
+}
+
+.title-bar li
+{
+
+	padding: 0rem;
+	margin: -0.5em;
+	text-align: left;
+
+}
+
+h1,h2,h3,h4
+{
+	
+	
+font-family: 'keep_calm', arial;	
+	
+}
+
+h3
+{
+	
+color: #054f18;
+	
+	
+}
+
+h1
+{
+
+font-size: 2.2em;	
+margin-top: 1%;
+	
+}
+
+h1, h2
+{
+	
+	color: #96b49c;
+	
+}
+
+h2, h3, h4
+{
+	
+font-size: 1.2em;	
+	
+}
+
+p
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	line-height: 2.5em;
+}
+
+.menustyle
+{
+	
+	background-color: #efefef;
+	padding-top: 0.5em;
+	-webkit-box-shadow: 0em 0.3em 0.2em 0em rgba(0,0,0,0.2);
+-moz-box-shadow: 0em 0.3em 0.3em 0em rgba(0,0,0,0.2);
+box-shadow: 0em 0.3em 0.3em 0em rgba(0,0,0,0.2);
+	
+}
+
+.menustyle li /*media query to fit on medium*/
+{
+	
+
+margin-left: 1%;
+margin-right: 1%;
+display: list-item;	
+text-align: center;	
+
+}
+
+.menustyle li:last-child
+{
+
+margin-right: -1%;	
+	
+}
+
+.logo
+{
+	
+	height: 2em;
+	
+	
+}
+
+.menu-icon
+{
+	
+margin-top: 0.5em;
+margin-bottom: 0.5em;	
+	
+}
+
+
+.textlarge
+{
+	
+font-size: 1.2em;	
+	
+}
+
+.largeimgcon
+{
+	
+
+min-height: 50%;
+
+	
+	
+}
+
+.whitebg
+{
+
+background-color: rgba(255,255,255, 0.9);
+	
+}
+
+header a
+{
+		
+color: #787b7c;
+
+	
+}
+
+.menustyle a:hover /*media query hover classes later*/
+{
+	
+font-weight: bold;
+color: #787b7c;	
+margin-left: -0.09em;
+margin-right: -0.09em;
+
+}
+
+footer a
+{
+	
+color: #f3f3f3;	
+	
+	
+}
+
+footer a:hover
+{
+	
+color: #787b7c;	
+	
+}
+
+.green
+{
+	
+color: #219b67;
+text-decoration: underline;	
+	
+}
+
+#regbut
+{
+	
+background-color: #ad485a;
+vertical-align: middle;	
+padding: 0.4em;
+border-radius: 1em;
+	
+}
+
+#regbut a
+{
+	
+color: #ffffff;	
+	
+	
+}
+
+
+
+
+.largeimgcon img
+{
+	
+margin-bottom: 3em;	
+	
+}
+
+.largeimgcon h1
+{
+
+margin-top: 1em;	
+	
+}
+
+#drivebut
+{
+	
+background-color: #95b39b;
+vertical-align: middle;	
+padding: 0.4em;
+
+	
+}
+
+#drivebut a
+{
+	
+color: #ffffff;	
+	
+	
+}
+
+.space
+{
+	
+border-top: #efefef 7em solid;
+	
+}
+
+section:not(.largeimgcon)
+{
+	
+padding-top: 3%;
+padding-bottom: 3%;	
+	
+}
+
+.icons *
+{
+	
+	
+margin-right: 0.5em;	
+	
+}
+
+.title-bar a:hover
+{
+	
+color: #ffffff;	
+font-weight:100;
+	
+}
+
+.green:hover
+{
+	
+color: #054f18;
+	
+}
+
+.thumbs
+{
+	
+height: 25em;	
+overflow: auto;	
+background-color: #efefef;
+	
+}
+
+.thumbs div
+{
+	
+position: relative;
+margin-bottom: 2%;
+margin-top: 2%;
+	
+}
+
+.thumb1
+{
+	
+-webkit-box-shadow: 0px 2px 3px 3px rgba(149,179,155,1);
+-moz-box-shadow: 0px 2px 3px 3px rgba(149,179,155,1);
+box-shadow: 0px 2px 3px 3px rgba(149,179,155,1);
+	
+}
+
+.thumbs p
+{
+
+position: absolute;
+z-index: 2;	
+bottom: 0;
+margin: 0em;
+color: #ffffff;
+padding: 0em;
+width: 100%;
+height: 27%;
+background-color: rgba(0,0,0, 0.6);
+
+	
+}
+
+
+@media only screen AND (min-width: 40em){
+	
+	h1
+	{
+
+font-size: 2.2em;		
+		
+	}
+	
+	.largeimgcon
+{
+	
+background-color: #efefef; 
+background-image:url(../images/clockimg.jpg);
+background-size: cover;
+background-position: bottom-left;	
+	
+}
+	
+	.menustyle ul, .title-bar ul
+{
+	
+text-align: right;		
+	
+}
+	
+.menustyle li
+{
+	
+display: inline;	
+		
+	
+}
+
+.ban
+{
+
+border-bottom: #CBCBCB 0.03em solid;
+
+	
+}
+	
+	
+}
+
+@media only screen AND (min-width: 60em){
+	
+.menustyle li /*media query to fit on medium*/
+{
+	
+
+margin-left: 5%;
+margin-right: 5%;	
+	
+	
+}	
+
+
+	
+}
+
+@media only screen AND (min-width: 75em)
+{
+	
+	
+.whitebg
+{
+
+background-color: rgba(255,255,255, 0);	
+	
+}	
+	
+	
+}
+
+
