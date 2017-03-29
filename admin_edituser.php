@@ -3,13 +3,13 @@
     error_reporting(E_ALL);
 
     require_once("admin/phpscripts/init.php");
-	//confirm_logged_in();
+	confirm_logged_in();
 
-    $id = $_SESSION['user_id'];
+   $id = $_SESSION['user_id'];
     $populate = getUser($id);
-	
 
-	
+
+
 	if(isset($_POST['submit'])) {
 		//echo works;
 		$fname = trim($_POST['fname']);
@@ -17,10 +17,12 @@
 		$username = trim($_POST['username']);
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-		
+
 		$result = editUser($fname, $lname, $username, $email, $password, $id);
 		$message = $result;
 		}
+
+		
 
 ?>
 
@@ -35,9 +37,13 @@
 
 <body>
 
+	<?php
+	include('includes/nav.html');
+	 ?>
+
 <div class="container">
 
-<section class="whitebox">
+<section class="whitebox" id="adminEditUser">
 
 <h1>Edit User</h1>
 
@@ -48,7 +54,7 @@
 <?php if(!empty($message)){echo $message;} ?>
 
 
-<form action ="admin_edituser.php" method="post">
+<form action ="admin_edituser.php" method="post" id="adminEdit">
 
 <div class="stack">
 
@@ -72,17 +78,26 @@
 
 <!--I'd probably have to write a function that would decode encrypted passwords from the salt + hash then re-encrypt the NEW password like I attempted with the login function, but I'll keep this simple for now.-->
 </div>
-</div>
 
-<input class="stack importantbut" type="submit" name="submit" value="Edit User">
+<input class="stack importantbut submit" type="submit" name="submit" value="Edit User">
+</div>
 </form>
 
 
-<a class="stack centertext link" href="admin_index.php">Back to Admin Panel</a>
+<a class="stack centertext link linkhover" href="admin_index.php">Back to Admin Panel</a>
 
 </section>
 
 </div>
 
+<?php
+include('includes/footer.html');
+ ?>
+
+
+     <script src="js/vendor/jquery.js"></script>
+     <script src="js/vendor/foundation.min.js"></script>
+     <script src="js/vendor/what-input.js"></script>
+     <script src="js/app.js"></script>
 </body>
 </html>

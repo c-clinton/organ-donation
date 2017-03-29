@@ -1,10 +1,10 @@
 <?php
 	ini_set('display_errors',1);
     error_reporting(E_ALL);
-	
+
 	require_once("admin/phpscripts/init.php");
-	//confirm_logged_in();
-	
+	confirm_logged_in();
+
 	if(isset($_POST['submit'])) {
 		//echo works;
 		$fname = trim($_POST['fname']);
@@ -13,13 +13,13 @@
 		$email = trim($_POST['email']);
 		$level = trim($_POST['lvllist']);
 		if(empty($level)) { //checks if level is empty
-		
+
 		//echo "Level not selected.";
-		
+
 		$message = "Please select a user level.";
-		
+
 		}else{
-			
+
 			//echo "Level selected.";
 			$result = createUser($fname, $lname, $username, $email, $level);
 			$message = $result;
@@ -38,10 +38,14 @@
 </head>
 
 <body>
+	<?php
+	include('includes/nav.html');
+	 ?>
 
-<div class="container">
 
-<section class="whitebox">
+<div class="container" id="adminCreate">
+
+<section class="whitebox" id="createSection">
 
 <h1>Create User</h1>
 
@@ -52,7 +56,7 @@
 <?php if(!empty($message)){echo $message;} ?>
 
 
-<form action ="admin_createuser.php" method="post">
+<form action ="admin_createuser.php" method="post" id="createForm">
 
 <div class="stack">
 
@@ -78,17 +82,29 @@
 </select>
 
 </div>
+<input class="stack importantbut submit" type="submit" name="submit" value="Create User">
 </div>
 
-<input class="stack importantbut" type="submit" name="submit" value="Create User">
+
+
+
 </form>
 
 
-<a class="stack centertext link" href="admin_index.php">Back to Admin Panel</a>
+<a class="stack centertext link linkhover" href="admin_index.php">Back to Admin Panel</a>
 
 </section>
 
 </div>
 
+<?php
+include('includes/footer.html');
+ ?>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
