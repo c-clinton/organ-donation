@@ -27,13 +27,17 @@ $(document).foundation();
 	header.classList.add("visible");
 	header.classList.remove("hidden");
 	}
+	
+var nav = document.querySelector('nav');
+	
+var langbuts = nav.querySelectorAll('a');
 
 
 	
 	var main = document.querySelector("main");
 	var httpRequest;
 	
-function requesthome(){
+function requesthome(evt){
 
 httpRequest = new XMLHttpRequest();
 
@@ -45,7 +49,7 @@ return false;
 }
 
 httpRequest.onreadystatechange = loadhomecontent;
-httpRequest.open('GET', 'admin/phpscripts/get_home.php' + '?home_id=2');
+httpRequest.open('GET', 'admin/phpscripts/get_home.php' + '?home_id=' + evt.target.id);
 httpRequest.send();
 
 }
@@ -84,6 +88,9 @@ s2p3.innerHTML = homedata.home_s2_p3;
 	skip.addEventListener("mousedown", stopvid, false);
 	vid.addEventListener("ended", showheader, false);
 	window.addEventListener("load", requesthome, false);
+	[].forEach.call(langbuts, function(langbuts) {
+	langbuts.addEventListener("click", requesthome, false);
+	});
 
 /*var infotitle1 = document.querySelector('.infotitle1');
 var infotitle2 = document.querySelector('.infotitle2');

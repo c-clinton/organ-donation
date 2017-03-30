@@ -43,7 +43,7 @@
         </a>
       </div>
        <video id="vid" controls width="100%" height="auto" autoplay>
-     <source class="flex-video" src="video/introvid.mp4" type="video/mp4">
+     <source class="flex-video" src="videos/introvid.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
   </section>

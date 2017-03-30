@@ -17,13 +17,15 @@ for($i=0; $i<mysqli_num_fields($result); $i++) { //for loop runs through the fir
 	$fieldType = $dataType->type; //shows the input type, allows us to change input based on the type listed in the db
 	//echo $fieldType."<br>";
 	if($fieldName !=$col){
-	
-	echo "<label>{$fieldName}</label>";	//would likely have to do a find and replace to replace underscores with spaces, but we won't worry bout it for now.
+		
+
+	$name = str_replace('_', ' ', $fieldName);
+	echo "<label>{$name}</label>";	
 	if($fieldType !=252){
-		echo "<input type = \"text\" name =\"{$fieldName}\" value = \"{$getResult[$i]}\"><br><br>";
+		echo "<input type = \"text\" name =\"{$name}\" value = \"{$getResult[$i]}\"><br><br>";
 	}else{
 	
-	echo "<textarea name=\"$fieldName\">{$getResult[$i]}</textarea><br><br>";	
+	echo "<textarea name=\"$name\">{$getResult[$i]}</textarea><br><br>";	
 		
 	}
 		

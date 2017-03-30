@@ -44,8 +44,8 @@
 
     <h2 class="vidtitle">Meet Ryley</h2>
 
-    <video controls width="auto" height="auto" class="small-12 large-9 columns">
-     <source class="flex-video mainstoryVid" src="video/ryley.mp4" type="video/mp4">
+    <video controls width="auto" height="auto" class="vidcon small-12 large-9 columns">
+     <source class="flex-video mainvid" src="videos/ryley.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
 
@@ -119,7 +119,7 @@
     <hr>
 
     <section class="row">
-    <h1 class="text-center columns storyHelp">Want to Help Someone Like Ryley?</h1>
+    <h1 class="text-center columns storyHelp">Want to Help Someone Like <span class="nametext">Ryley</span>?</h1>
     <h2 class="text-center columns">It's easy to start your own registration drive. Do it as an individual or on behalf of your company or community group.</h2>
      <div id="drivebut" class="small-centered text-center small-4 medium-3 columns"><h3><a href="#">Start a Drive</a></h3></div>
     </section>
