@@ -12,27 +12,17 @@
 
 
       <div class="wrapper">
-
-    <header>
+ <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
       <?php
         include('includes/nav.html');
         ?>
-    </header>
-
-    <section class="ban">
-
-    <div class="row">
-    <h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
-    <div id="regbut" class="show-for-medium medium-3 columns"><a href="https://www.ontario.ca/page/organ-and-tissue-donor-registration?utm_source=so&utm_medium=keyword&utm_campaign=original" target="_blank"><h4 class="text-center">Register or Check Now</h4></a></div>
-    </div>
-
-    </section>
-
-
-
-
-
-
+    <?php
+        include('includes/ban.html');
+        ?>
+ </header>
 
     <main>
     <section id="introvid" class="visible">
@@ -53,13 +43,13 @@
       <section class="hidden largeimgcon">
       <div class="row">
       <div class="whitebg medium-6 medium-push-6 text-center columns">
-      <h1>Use Your Time Wisely</h1>
-      <p class="textlarge">Becoming an organ donor takes three easy steps:</p>
-      <h3>Have your health card number ready.</h3>
+      <h1 class="slogan">Use Your Time Wisely</h1>
+      <p class="textlarge steps">Becoming an organ donor takes three easy steps:</p>
+      <h3 class="step1">Have your health card number ready.</h3>
       <img class="small-4 medium-3 large-2" src="images/healthcardicon.svg" alt="health card icon">
-      <h3>Click 'Register or Check Now'.</h3>
+      <h3 class="step2">Click 'Register or Check Now'.</h3>
       <img class="small-4 medium-3 large-2" src="images/mouseicon.svg" alt="mouse icon">
-      <h3>Spread the word to save more lives.</h3>
+      <h3 class="step3">Spread the word to save more lives.</h3>
      <img class="small-4 medium-3 large-2" src="images/speaker.svg" alt="speaker icon">
       </div>
       </div>
@@ -91,7 +81,7 @@
 
      <div class="row">
       <h1 class="small-12 hometitle2 columns">Getting Involved</h1>
-      <p class="small-12 columns getinvolved1">doink</p>
+      <p class="small-12 columns getinvolved1">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. </p>
       </div>
       <img class="small-12 homeimg" src="images/couple.jpg" alt="Being a donor could save the life of someone dear.">
       <div class="row">
@@ -112,14 +102,14 @@
     <section id="share" class="row">
 
       <div class="small-12 columns">
-      <h1 class="text-center">Spread the Word</h1>
+      <h1 class="text-center spreadword">Spread the Word</h1>
       <div class="small-centered text-center small-12 medium-6">
     <a href="http://www.facebook.com/TrilliumGiftofLife" target="_blank"><img src="images/fb_colored.png" alt="facebook"></a>
     <a href="http://twitter.com/trilliumgift" target="_blank"><img src="images/tw_colored.png" alt="twitter"></a>
       <a href="https://www.youtube.com/ongov" target="_blank"><img src="images/yt_colored.png" alt="youtube"></a>
-      <h2 class="text-center">You can also get involved by starting a drive of your own. Click below to learn more.</h2>
+      <h2 class="text-center swtext">You can also get involved by starting a drive of your own. Click below to learn more.</h2>
       </div>
-      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="drives.php">Start a Drive</a></h3></div>
+      <div id="drivebut" class="small-centered text-center small-4 medium-3"><h3><a href="drives.php" class="driveslink">Start a Drive</a></h3></div>
       </div>
 
     </section>
@@ -128,11 +118,11 @@
 
 
 
-
+<footer>
       <?php
         include('includes/footer.html');
         ?>
-
+</footer>
 
     </div>
 
@@ -143,5 +133,7 @@
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/introscript.js"></script>
+    <script src="js/homereq.js"></script>
   </body>
 </html>

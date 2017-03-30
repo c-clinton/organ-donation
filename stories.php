@@ -14,26 +14,17 @@
 
 
       <div class="wrapper">
-
-    <header>
-
-
+   <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
       <?php
         include('includes/nav.html');
         ?>
-
-    </header>
-
-    <section class="ban">
-
-    <div class="row">
-    <h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
-    <div id="regbut" class="show-for-medium medium-3 columns"><a href="https://www.ontario.ca/page/organ-and-tissue-donor-registration?utm_source=so&utm_medium=keyword&utm_campaign=original" target="_blank"><h4 class="text-center">Register or Check Now</h4></a></div>
-    </div>
-
-    </section>
-
-
+    <?php
+        include('includes/ban.html');
+        ?>
+ </header>
     <main>
 
  <section class="row">
@@ -53,7 +44,7 @@
     <div class="mobilethumbs hide-for-large row">
     <div class="small-12 medium-3 columns">
     <p class="storyTitle1">Meet Ryley</p>
-   <a href="#"> <img src="images/ryley_thumb.jpg" alt="meet ryley" class="1"></a>
+   <a href="#"> <img src="images/ryley_thumb.jpg" alt="meet ryley" id="firstthumb" class="1"></a>
     </div>
    	<div class="small-12 medium-3 columns" >
     <p class="storyTitle2">Meet Andrea</p>
@@ -119,18 +110,19 @@
     <hr>
 
     <section class="row">
-    <h1 class="text-center columns storyHelp">Want to Help Someone Like <span class="nametext">Ryley</span>?</h1>
-    <h2 class="text-center columns">It's easy to start your own registration drive. Do it as an individual or on behalf of your company or community group.</h2>
-     <div id="drivebut" class="small-centered text-center small-4 medium-3 columns"><h3><a href="#">Start a Drive</a></h3></div>
+    <h1 class="text-center columns"><span class="storyHelp">Want to Help Someone Like </span><span class="nametext">Ryley</span>?</h1>
+    <h2 class="text-center columns startdrivetext">It's easy to start your own registration drive. Do it as an individual or on behalf of your company or community group.</h2>
+     <div id="drivebut" class="small-centered text-center small-4 medium-3 columns"><h3><a href="#" class="driveLink">Start a Drive</a></h3></div>
     </section>
 
     </main>
 
 
-    <?php
-      include('includes/footer.html');
-      ?>
-
+ <footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
     </div>
 
 

@@ -7,6 +7,15 @@
   margin-top: -10px;
 }
 
+/*ADDED THIS TO FIX FRENCH NAVS*/
+
+.banfr, .footerfr, .navfr
+{
+
+display: none;	
+	
+}
+
 h1.adminh1 {
   font-size: 2em;
   text-align: center;

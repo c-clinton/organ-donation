@@ -15,26 +15,19 @@
 
       <div class="wrapper">
 
-    <header>
-
+   <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
       <?php
         include('includes/nav.html');
         ?>
-    </header>
+    <?php
+        include('includes/ban.html');
+        ?>
+ </header>
 
     <main>
-
-    <section class="ban">
-
-   <div class="row">
-    <h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
-    <div id="regbut" class="show-for-medium medium-3 columns"><a href="https://www.ontario.ca/page/organ-and-tissue-donor-registration?utm_source=so&utm_medium=keyword&utm_campaign=original" target="_blank"><h4 class="text-center">Register or Check Now</h4></a></div>
-    </div>
-
-    </section>
-
-
-
         <section class="row">
 
     <div class="columns">
@@ -43,17 +36,20 @@
 
     <h2 class="vidtitle">Organ Donation 101</h2>
 
-    <img class="medium-9 columns aboutCoverImg" src="images/infographic.jpg" alt="Organ Donation 101 placeholder">
+    <video controls width="auto" height="auto" class="vidcon small-12 large-9 columns">
+     <source class="flex-video mainvid" src="videos/infovid1.mp4" type="video/mp4">
+     <p>Your browser does not support HTML5 video.</p>
+    </video>
 
 	<div class="thumbcon">
     <div class="mobilethumbs hide-for-large row">
     <div class="small-12 medium-3 columns">
     <p class="aboutVid1Title">Organ Donation 101</p>
-    <img src="images/infographic_thumb.jpg" alt="meet ryley" class="1">
+    <img src="images/infographic_thumb.jpg" alt="infovid" id="firstthumb" class="5">
     </div>
    	<div class="small-12 medium-3 columns" >
     <p class="aboutVid2Title">How to Register</p>
-    <img src="images/second_thumb.jpg" alt="meet andrea" class="2">
+    <img src="images/second_thumb.jpg" alt="meet andrea" class="6">
     </div>
 
     </div>
@@ -291,23 +287,23 @@ Organ and tissue donation does not impact funeral plans. Cremation and an open c
 
     <div class="columns">
 
-    <h1>The Donation Process</h1>
+    <h1 class="infotitle1">The Donation Process</h1>
 
-    <p class="textlarge donationprocess">In Ontario, organ and tissue donation is coordinated and managed by Trillium Gift of Life Network. Though everyone is a potential donor, you may be surprised to learn that the opportunity for organ donation is rare, because of the need to sustain a patient on a ventilator. In fact, you are five times more likely to need an organ transplant during your lifetime than to have the opportunity to donate one. On average, only three per cent of hospital deaths occur in circumstances that may lead to organ donation. This is not the case for tissue donation, which can take place in most cases when someone has died, as long as the tissue is suitable for transplantation.</p>
+    <p class="textlarge donationprocess1">In Ontario, organ and tissue donation is coordinated and managed by Trillium Gift of Life Network. Though everyone is a potential donor, you may be surprised to learn that the opportunity for organ donation is rare, because of the need to sustain a patient on a ventilator. In fact, you are five times more likely to need an organ transplant during your lifetime than to have the opportunity to donate one. On average, only three per cent of hospital deaths occur in circumstances that may lead to organ donation. This is not the case for tissue donation, which can take place in most cases when someone has died, as long as the tissue is suitable for transplantation.</p>
 
     <hr class="small-3">
 
-<p class="donationprocess">Because opportunities for organ donation are relatively rare and the impact is life-saving, it's important that Ontarians give serious thought to organ and tissue donation and register their consent to donate. By registering, you are essentially making a decision to help save lives after death through organ and tissue donation. By making this decision, you give hope to patients waiting for a life saving or life enhancing transplant and their families.</p>
+<p class="donationprocess2">Because opportunities for organ donation are relatively rare and the impact is life-saving, it's important that Ontarians give serious thought to organ and tissue donation and register their consent to donate. By registering, you are essentially making a decision to help save lives after death through organ and tissue donation. By making this decision, you give hope to patients waiting for a life saving or life enhancing transplant and their families.</p>
 
-<p class="donationprocess">Your decision to register is confidential. It is stored in a Ministry of Health and Long-Term Care database and it will only be disclosed to Trillium Gift of Life Network at the appropriate time, once it has been determined that lifesaving efforts have failed. Specially trained staff will then share registration details with your family during end-of-life discussions, to help them make a choice about donation. By registering your consent to donate, you relieve your family of the burden of making this decision on your behalf.</p>
+<p class="donationprocess3">Your decision to register is confidential. It is stored in a Ministry of Health and Long-Term Care database and it will only be disclosed to Trillium Gift of Life Network at the appropriate time, once it has been determined that lifesaving efforts have failed. Specially trained staff will then share registration details with your family during end-of-life discussions, to help them make a choice about donation. By registering your consent to donate, you relieve your family of the burden of making this decision on your behalf.</p>
 
 <hr class="small-3">
 
-<p class="donationprocess">Once a family has consented to donation, testing is done to confirm the medical suitability of the organs and tissue, and to determine which patients waiting for organ transplantation are the best match for the donated organs. This includes a medical and social history of the donor, similar to the questionnaire completed when donating blood. Trillium Gift of Life Network works closely with a team of healthcare professionals to support grieving families through this process, and to ensure that as many people as possible benefit from the generous gift of organs and/or tissue.</p>
+<p class="donationprocess4">Once a family has consented to donation, testing is done to confirm the medical suitability of the organs and tissue, and to determine which patients waiting for organ transplantation are the best match for the donated organs. This includes a medical and social history of the donor, similar to the questionnaire completed when donating blood. Trillium Gift of Life Network works closely with a team of healthcare professionals to support grieving families through this process, and to ensure that as many people as possible benefit from the generous gift of organs and/or tissue.</p>
 
-<p>Recovery of organs occurs in the operating room and it is done with skill and respect by physicians. Donation typically does not impact funeral or burial plans, and it often occurs while families are making these arrangements and contacting others. In fact, an open casket funeral is possible. Trillium Gift of Life Network stays in contact with families during this time to inform them when organ and tissue recovery is complete and to share some general information on the recipients.</p>
+<p class="donationprocess5">Recovery of organs occurs in the operating room and it is done with skill and respect by physicians. Donation typically does not impact funeral or burial plans, and it often occurs while families are making these arrangements and contacting others. In fact, an open casket funeral is possible. Trillium Gift of Life Network stays in contact with families during this time to inform them when organ and tissue recovery is complete and to share some general information on the recipients.</p>
 
-<p>Through the Donor Family Support program, Trillium Gift of life Network provides continued support, as well as the opportunity to communicate anonymously with recipients. Donor families are recognized and honoured at an annual Celebration of Life, an event held to acknowledge and celebrate the extraordinary gift donor families have given.</p>
+<p class="donationprocess6">Through the Donor Family Support program, Trillium Gift of life Network provides continued support, as well as the opportunity to communicate anonymously with recipients. Donor families are recognized and honoured at an annual Celebration of Life, an event held to acknowledge and celebrate the extraordinary gift donor families have given.</p>
 
     </div>
   </section>
@@ -318,51 +314,51 @@ Organ and tissue donation does not impact funeral plans. Cremation and an open c
 
     <div class="columns">
 
-    <h1 class="small-12 text-center">Stats</h1>
+    <h1 class="small-12 text-center infotitle2">Stats</h1>
 
-    <h2 class="text-center">The need for organ donors in Ontario</h2>
+    <h2 class="text-center infotitle3">The need for organ donors in Ontario</h2>
 
-    <p statsText>Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. You can <a class="green" href="drives.php">Spread the Word</a> by encouraging your friends and family to register their consent to become organ and tissue donors.</p>
+    <p class="statInfo1">Currently, almost 1,600 people in Ontario are waiting for a life-saving organ transplant. And though most of us believe that organ donation is a good thing, just over a quarter of us are registered as donors. Some great strides have been made in Ontario over the past year, but still more needs to be done. You can <a class="green" href="drives.php">Spread the Word</a> by encouraging your friends and family to register their consent to become organ and tissue donors.</p>
 
 	<div class="statistics small-12 row">
-    <div class="small-centered text-center columns"><h3 class="statnumbers stat1">31%</h3>
-	<p class="textsmall statInfo1">of Ontarians are registered donors. That’s 3.7 million out of an eligible 12.1 million.</p>
+    <div class="small-centered text-center columns"><h3 class="statnumbers statInfo2">31%</h3>
+	<p class="textsmall statInfo3">of Ontarians are registered donors. That’s 3.7 million out of an eligible 12.1 million.</p>
 	</div>
 
-	<div class="small-centered text-center columns"><h3 class="statnumbers stat2">1,528</h3>
-	<p class="textsmall statInfo2">Ontarians are currently waiting for an organ transplant. As of December 31, 2016</p>
+	<div class="small-centered text-center columns"><h3 class="statnumbers stat2 statInfo4">1,528</h3>
+	<p class="textsmall statInfo5">Ontarians are currently waiting for an organ transplant. As of December 31, 2016</p>
 	</div>
 
-    <div class="small-centered text-center  columns"><h3 class="statnumbers stat3">13,300</h3>
-	<p class="textsmall statInfo3">Ontarians have received a lifesaving organ transplant since 2003.</p>
+    <div class="small-centered text-center  columns"><h3 class="statnumbers stat3 statInfo6">13,300</h3>
+	<p class="textsmall statInfo7">Ontarians have received a lifesaving organ transplant since 2003.</p>
 	</div>
 
     </div>
 
 
-    <h2 class="ourGoal">Our goal is to achieve 254,000 new registrations April 1, 2016 - March 31, 2017.</h2>
+    <h2 class="statInfo8">Our goal is to achieve 254,000 new registrations April 1, 2016 - March 31, 2017.</h2>
 
 
     <div class="small-12 columns">
 
     <div class="row">
 
-      <p class="small-12 medium-6 circlebig red columns">
+      <p class="small-12 medium-6 circlebig red columns"><span class="circletext1">
 
-We reached
+We reached</span>
 
-<span class="statnumbers redtext totalPercent">77%</span>
+<span class="statnumbers redtext statInfo9">77%</span>
 
-of our total goal
+<span class="circletext2">of our total goal
 
-as of December 31, 2016
+as of December 31, 2016</span>
 </p>
 
 <div class="small-12 medium-6 columns">
 
-<h1 class="statnumbers redtext totalNumber">195,241</h1>
+<h1 class="statnumbers redtext statInfo10">195,241</h1>
 
-<p>Ontarians that have registered to become organ and tissue donors.
+<p class="statInfo11">Ontarians that have registered to become organ and tissue donors.
 
 Updated every 3 months</p>
 </div>
@@ -514,21 +510,19 @@ Updated every 3 months</p>
 
 </main>
 
-<?php
-  include('includes/footer.html');
-  ?>
+<footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
 
     </div>
-
-
-
-
-
-
+    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/vidjs.js"></script>
+    <script src="js/aboutvidjs.js"></script>
+    <script src="js/aboutreq.js"></script>
   </body>
 </html>

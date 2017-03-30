@@ -15,21 +15,18 @@
 
       <div class="wrapper">
 
-    <header>
+  <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
       <?php
         include('includes/nav.html');
         ?>
-    </header>
-
-    <section class="ban">
-
-    <div class="row">
-    <h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
-    <div id="regbut" class="show-for-medium medium-3 columns"><a href="https://www.ontario.ca/page/organ-and-tissue-donor-registration?utm_source=so&utm_medium=keyword&utm_campaign=original" target="_blank"><h4 class="text-center">Register or Check Now</h4></a></div>
-    </div>
-
-    </section>
-
+    <?php
+        include('includes/ban.html');
+        ?>
+ </header>
+        
     <main>
 
     <section>
@@ -477,10 +474,11 @@ When you start a drive, you can include a goal. Depending on how many people are
 
  </main>
 
- <?php
-   include('includes/footer.html');
-   ?>
-
+<footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
 
     </div>
 
