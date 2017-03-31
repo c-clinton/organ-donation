@@ -1,4 +1,43 @@
 
+#phpGreeting {
+ margin-top: 10px;
+}#greeting, #php {
+ color: black;
+}
+#createForm input, #adminEdit input {
+ text-align: center;
+}#homeEdit {}a {
+ color: #729b7a
+;
+}a:focus, a:hover {
+ color: #729b7a
+;
+}a.button:visited {
+ color: white;
+}
+
+label{
+
+font-weight: bold;	
+font-size: 1.2em;
+ color: #729b7a;
+ margin-bottom: 1%;	
+	
+}
+
+#editFAQs, #editDrives, #editVideos {
+ text-align: center;
+ margin-right: 50px;
+ margin-left: 50px;
+}#editFAQS h1, #editDrives h1, #editVideos h1 {
+text-align: center;
+}#editFAQS form input, #editDrives form input, #editVideos form input {
+ text-align: center;
+ width: 600px;
+ display: block;
+ margin: 0  auto;
+}#faqsForm, #drivesForm, #videoForm {
+ text-align: center;}
 
 #adminLogin {
   display: block;
@@ -109,7 +148,7 @@ h1.adminh1 {
   cursor: pointer;
 }
 
-#regbut:hover {
+.regbut:hover {
   transform: scale(0.95,0.95);
   transition: ease 0.5s;
 }
@@ -509,6 +548,8 @@ margin-bottom: 10px;
 
 
 min-height: 50%;
+padding: 5%;
+margin-top: 25%;
 background-color: #efefef;
 background-image:url(../images/clockimg.jpg);
 background-size: cover;
@@ -565,7 +606,7 @@ text-decoration: underline;
 
 }
 
-#regbut
+.regbut
 {
 
 background-color: #ad485a;
@@ -575,10 +616,10 @@ border-radius: 1em;
 
 }
 
-#regbut a
+.regbut a
 {
 
-color: #ffffff;
+color: #ffffff !important;
 
 
 }
@@ -690,7 +731,7 @@ margin: 0em;
 color: #ffffff;
 padding: 0em;
 width: 100%;
-height: 27%;
+height: 2em;;
 background-color: rgba(0,0,0, 0.6);
 
 
@@ -1494,6 +1535,12 @@ text-align: right;
 
 }
 
+.largeimgcon{
+	
+margin-top: 0%;	
+	
+}
+
 
 
 
@@ -2118,4 +2165,61 @@ margin-right: 5%;
 }
 
 
+}
+
+
+/*............................................................................*/
+
+@keyframes fadein {
+	
+0%{opacity: 0;}	
+50%{opacity: 0;}
+100%{opacity: 1;}
+	
+}
+
+
+.regbutsmall{
+	
+margin-top: 7%;
+margin-bottom: 7%;	
+	
+}
+
+#phpGreeting{
+	
+margin-top: 5em;	
+	
+	
+}
+
+#adminButtons{
+	
+	margin-bottom: 10em;
+	
+	
+}
+
+.logout{
+	
+	
+margin-bottom: 12em;	
+	
+}
+
+#push
+{
+	
+margin-bottom: 15em;	
+	
+	
+}
+
+#loginSection{
+	
+	
+margin-top: 5em;
+margin-bottom: 5em;	
+	
+	
 }

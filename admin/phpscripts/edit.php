@@ -9,17 +9,17 @@ $id = $_POST['id'];
 
 unset($_POST['tbl']);
 unset($_POST['col']);
-unset($_POST['id']); //removes table, column, and id from posted content, to prevent additional items from being edited.
+unset($_POST['id']);
 
 $num = count($_POST);
 
-$qstring = "UPDATE {$tbl} SET "; //always remember to add space after SET to avoid names being fucked up
+$qstring = "UPDATE {$tbl} SET ";
 
 foreach($_POST as $label=>$value) {
 	
 	$count++;
 	if($count != $num){
-		$qstring .= $label." = '".$value."', ";  // .= is the same as ++ in JS
+		$qstring .= $label." = '".$value."', "; 
 	}else{
 		
 		$qstring .= $label." = '".$value."' "; 
@@ -27,7 +27,7 @@ foreach($_POST as $label=>$value) {
 	
 }
 
-$qstring .= "WHERE {$col}={$id}"; //no quotes around {$integers}
+$qstring .= "WHERE {$col}={$id}";
 
 echo $qstring;
 

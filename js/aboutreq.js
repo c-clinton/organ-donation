@@ -18,7 +18,6 @@ var process5 = document.querySelector('.donationprocess5');
 var process6 = document.querySelector('.donationprocess6');
 var main = document.querySelector("main");
 
-
 function requestinfo(evt){
 
 httpRequest = new XMLHttpRequest();

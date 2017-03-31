@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
 
 	require_once("admin/phpscripts/init.php");
-	confirm_logged_in();
+	//confirm_logged_in();
 
 	if(isset($_POST['submit'])) {
 		//echo works;
@@ -16,7 +16,7 @@
 
 		//echo "Level not selected.";
 
-		$message = "Please select a user level.";
+		$message = "<p style='color:red; text-align: center; padding-bottom: 10px;'>*Please select a user level.*</p>";
 
 		}else{
 
@@ -38,10 +38,14 @@
 </head>
 
 <body>
-	<?php
-	include('includes/nav.html');
-	 ?>
-
+	   <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
+      <?php
+        include('includes/nav.html');
+        ?>
+ </header>
 
 <div class="container" id="adminCreate">
 
@@ -97,9 +101,11 @@
 
 </div>
 
-<?php
-include('includes/footer.html');
- ?>
+ <footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
 
 
 <script src="js/vendor/jquery.js"></script>

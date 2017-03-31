@@ -1,7 +1,20 @@
+<?php
+
+	ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+	require_once('admin/phpscripts/init.php');
+
+		$tbl = "tbl_vids"; 
+		$getVids = getAll($tbl);
+
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stories - Trillium Gift of Life Network</title>
@@ -35,54 +48,25 @@
 
     <h2 class="vidtitle">Meet Ryley</h2>
 
-    <video controls width="auto" height="auto" class="vidcon small-12 large-9 columns">
+    <video controls width="auto" height="auto" class="vidcon small-12 medium-9 columns">
      <source class="flex-video mainvid" src="videos/ryley.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
 
-<div class="thumbcon">
-    <div class="mobilethumbs hide-for-large row">
-    <div class="small-12 medium-3 columns">
-    <p class="storyTitle1">Meet Ryley</p>
-   <a href="#"> <img src="images/ryley_thumb.jpg" alt="meet ryley" id="firstthumb" class="1"></a>
-    </div>
-   	<div class="small-12 medium-3 columns" >
-    <p class="storyTitle2">Meet Andrea</p>
-    <a href="#"><img src="images/andrea_thumb.jpg" alt="meet andrea" class="2"></a>
-    </div>
-    <div class="small-12 medium-3 columns">
-    <p class="storyTitle3">Meet Justin</p>
-    <a href="#"><img src="images/justin_thumb.jpg" alt="meet justin" class="3"></a>
-    </div>
-    <div class="small-12 medium-3 columns">
-    <p class="storyTitle4">Meet Carol</p>
-    <a href="#"><img src="images/carol_thumb.jpg" alt="meet carol" class="4"></a>
-    </div>
-    </div>
+<div class="small-12 medium-3 thumbcon thumbs columns">
+  
+    <?php
+        if(!is_string($getVids)){
+            while($row2 = mysqli_fetch_array($getVids)){
+              echo "<div class=\"small-centered medium-uncentered\"><p class='text-center'>{$row2['vid_title']}</p>
+              <a href='#'><img src=\"{$row2['vid_thumb']}\" alt=\"{$row2['vid_title']}\" class=\"{$row2['vid_id']}\"></a></div>";
+            }
+          }else{
+		echo "<p>{$getVids}</p>";
+	}
 
-
-
-    <div class="thumbs thumbcon large-3 show-for-large columns">
-
-    <div class="thumb1">
-    <p class="show-for-large text-center storyTitle1">Meet Ryley</p>
-    <a href="#"><img src="images/ryley_thumb.jpg" alt="Meet Ryley" class="1"></a>
-    </div>
-
-    <div>
-    <p class="text-center storyTitle2">Meet Andrea</p>
-    <a href="#"><img src="images/andrea_thumb.jpg" alt="Meet Andrea" class="2"></a>
-    </div>
-
-    <div>
-    <p class="text-center storyTitle3">Meet Justin</p>
-    <a href="#"><img src="images/justin_thumb.jpg" alt="Meet Justin" class="3"></a>
-    </div>
-
-    <div>
-    <p class="text-center storyTitle4">Meet Carol</p>
-    <a href="#"><img src="images/carol_thumb.jpg" alt="Meet Carol" class="4"></a>
-    </div>
+    ?>
+  </div>
 
     </div>
     </div>
@@ -94,7 +78,7 @@
     <section class="row">
 
     <div class="column storyText">
-    <h1 class="vidcaption">"I heard the words ‘enlarged heart’. I knew it was bad."</h1>
+    <h1 class="vidcaption">"I heard the words &lsquo;enlarged heart&rsquo;. I knew it was bad."</h1>
 
     <p class="viddescp1">Ryley was only two months old when she became quite ill. It was in the ER that her mother, Joanna, heard the words "enlarged heart." She remembers asking the doctor, "So you're telling me that my baby is going to die? And he said, 'No. But there's a good chance she's going to need a heart transplant.'"</p>
 

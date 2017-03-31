@@ -14,12 +14,30 @@ var mainvid = document.querySelector('.mainvid');
 var vidtitle = document.querySelector('.vidtitle');
 var engbut = document.getElementById('1');
 var frenchbut = document.getElementById('2');
-var langbuts = [engbut, frenchbut];
+
+var faqen = document.querySelectorAll('.eng');
+var faqfr = document.querySelectorAll('.fr');
+
+
+function loaddefault(){
+
+for(var i=0; i<faqfr.length;i++){
+faqfr[i].style.display="none";
+}	
+	
+}
+
 
 function change1(){
 
 engbut.classList.add("active");
-frenchbut.classList.remove("active");	
+frenchbut.classList.remove("active");
+for(var i=0; i<faqen.length;i++){
+faqen[i].style.display="block";
+}
+for(i=0; i<faqfr.length;i++){
+faqfr[i].style.display="none";
+}
 request();
 	
 }
@@ -28,6 +46,12 @@ function change2(){
 
 frenchbut.classList.add("active");	
 engbut.classList.remove("active");
+for(var i=0; i<faqen.length;i++){
+faqen[i].style.display="none";
+}
+for(i=0; i<faqfr.length;i++){
+faqfr[i].style.display="block";
+}
 request();
 	
 }
@@ -45,7 +69,7 @@ return false;
 
 
 httpRequest.onreadystatechange = loadstoryvid;
-httpRequest.open('GET', 'admin/phpscripts/get_vid.php' + '?vid_id=5');
+httpRequest.open('GET', 'admin/phpscripts/get_infovid.php' + '?vid_id=1');
 httpRequest.send();	
 	
 	
@@ -66,7 +90,7 @@ return false;
 
 
 httpRequest.onreadystatechange = loadstoryvid;
-httpRequest.open('GET', 'admin/phpscripts/get_vid.php' + '?vid_id=' + evt.target.className);
+httpRequest.open('GET', 'admin/phpscripts/get_infovid.php' + '?vid_id=' + evt.target.className);
 httpRequest.send();	
 
 	
@@ -92,5 +116,6 @@ vidtitle.innerHTML = viddata.vid_title_fr;
 
 engbut.addEventListener("click", change1, false);
 frenchbut.addEventListener("click", change2, false);
+window.addEventListener("load", loaddefault, false);
 
 })();

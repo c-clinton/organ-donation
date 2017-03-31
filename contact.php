@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Trillium Gift of Life Network</title>
@@ -160,8 +160,8 @@ if (isset ($_POST["contact_name"]) && isset ($_POST["contact_email"]) && isset (
 
     <section class="row hide-for-small-only" id="connectLG">
     	<div class="medium-12 medium-centered columns">
-        	<h2 class="text-center"> Stay Updated on News and Upcoming Events </h2>
-            <h4 class="text-center"> Like, Follow, and Subscribe </h4>
+        	<h2 class="text-center updatedheader"> Stay Updated on News and Upcoming Events </h2>
+            <h4 class="text-center updatedtext"> Like, Follow, and Subscribe </h4>
 	<a href="https://www.facebook.com/TrilliumGiftofLife" target="_blank"><img src="images/facebook.svg" alt="facebook" class="medium-4 columns sms"></a>
              <a href="https://twitter.com/trilliumgift" target="_blank"><img src="images/twitter.svg"  alt="twitter" class="medium-4 columns sms"></a>
             <a href="https://www.youtube.com/user/TrilliumGift" target="_blank"> <img src="images/youtube.svg"  alt="youtube" class="medium-4 columns sms"></a>

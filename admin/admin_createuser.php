@@ -1,27 +1,27 @@
 <?php
 	ini_set('display_errors',1);
     error_reporting(E_ALL);
-	
-	require_once("phpscripts/init.php");
+
+	require_once("admin/phpscripts/init.php");
 	//confirm_logged_in();
-	
+
 	if(isset($_POST['submit'])) {
 		//echo works;
 		$fname = trim($_POST['fname']);
 		$lname = trim($_POST['lname']);
 		$username = trim($_POST['username']);
-		$password = trim($_POST['password']);
+		$email = trim($_POST['email']);
 		$level = trim($_POST['lvllist']);
 		if(empty($level)) { //checks if level is empty
-		
+
 		//echo "Level not selected.";
-		
-		$message = "Please select a user level.";
-		
+
+		$message = "<p style='color:red; text-align: center; padding-bottom: 10px;'>*Please select a user level.*</p>";
+
 		}else{
-			
+
 			//echo "Level selected.";
-			$result = createUser($fname, $lname, $username, $password, $level);
+			$result = createUser($fname, $lname, $username, $email, $level);
 			$message = $result;
 		}
 	}
@@ -31,34 +31,86 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Create User</title>
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+	   <header>
+ <?php
+        include('includes/topbar.html');
+        ?>
+      <?php
+        include('includes/nav.html');
+        ?>
+ </header>
+
+<div class="container" id="adminCreate">
+
+<section class="whitebox" id="createSection">
+
+<h1>Create User</h1>
+
+<div class="formsection">
+
+<h2 class="hidden">Please fill out the fields below.</h2>
+
 <?php if(!empty($message)){echo $message;} ?>
-<form action ="admin_createuser.php" method="post">
+
+
+<form action ="admin_createuser.php" method="post" id="createForm">
+
+<div class="stack">
+
 <label>First Name:</label>
 <input type="text" name="fname" value="<?php if(!empty($fname)){echo $fname;} ?>">
 <label>Last Name:</label>
 <input name="lname" type="text" value="<?php if(!empty($lname)){echo $lname;} ?>">
+
+</div>
+
+<div class="stack">
 <label>Username:</label>
 <input name="username" type="text" value="<?php if(!empty($username)){echo $username;} ?>">
-<label>Password</label>
-<input name="password" type="text" value="<?php if(!empty($password)){echo $password;} ?>">
+<label>Email:</label>
+<input name="email" type="text" value="<?php if(!empty($email)){echo $email;} ?>">
+</div>
 
-<br></br>
-
+<div class="center">
 <select name="lvllist">
 	<option value="">Please select User Level...</option>option>
     <option value="2">Web Admin</option>
     <option value="1">Web Master</option>
 </select>
-<br><br>
-<input type="submit" name="submit" value="Create User">
-</form>
-<br><br>
-<a href="admin_index.php">Back to Admin Panel</a>
 
+</div>
+<input class="stack importantbut submit" type="submit" name="submit" value="Create User">
+</div>
+
+
+
+
+</form>
+
+
+<a class="stack centertext link linkhover" href="admin_index.php">Back to Admin Panel</a>
+
+</section>
+
+</div>
+
+ <footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

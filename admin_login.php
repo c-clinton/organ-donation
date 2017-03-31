@@ -31,18 +31,14 @@
   </head>
 <body>
 
-<?php
-	include('includes/nav.html')
-?>
-
-<section class="ban">
-
-<div class="row">
-<h2 class="show-for-medium medium-9 columns"><strong>1 Organ Donor Can Save 8 Lives.</strong> <br> It only takes 2 minutes for you to register.</h2>
-<div id="regbut" class="show-for-medium medium-3 columns"><a href="#"><h4 class="text-center">Register or Check Now</h4></a></div>
-</div>
-
-</section>
+   <header>
+ 	<?php
+        include('includes/topbar.html');
+        ?>
+      <?php
+        include('includes/nav.html');
+        ?>
+ </header>
 
 <div class="container" id="adminLogin">
 
@@ -60,10 +56,11 @@
 
  </div>
 
- <?php
- 	include('includes/footer.html')
- ?>
-
+ <footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
 
 
  <script src="js/vendor/jquery.js"></script>

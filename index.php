@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Trillium Gift of Life Network</title>
@@ -28,7 +28,7 @@
     <section id="introvid" class="visible">
     <h1 class="hidden">Welcome</h1>
       <div id="vidoverlay">
-        <a href="#" id="skip">
+        <a href="#" class="skip show-for-medium">
           Skip Video
         </a>
       </div>
@@ -36,6 +36,9 @@
      <source class="flex-video" src="videos/introvid.mp4" type="video/mp4">
      <p>Your browser does not support HTML5 video.</p>
     </video>
+    <p class="text-center"><a href="#" class="skip show-for-small-only">
+          Skip Video
+        </a></p>
   </section>
 
    <section id="home">
@@ -45,12 +48,18 @@
       <div class="whitebg medium-6 medium-push-6 text-center columns">
       <h1 class="slogan">Use Your Time Wisely</h1>
       <p class="textlarge steps">Becoming an organ donor takes three easy steps:</p>
+      <div class="thing1">
       <h3 class="step1">Have your health card number ready.</h3>
       <img class="small-4 medium-3 large-2" src="images/healthcardicon.svg" alt="health card icon">
+      </div>
+      <div class="thing2">
       <h3 class="step2">Click 'Register or Check Now'.</h3>
       <img class="small-4 medium-3 large-2" src="images/mouseicon.svg" alt="mouse icon">
+      </div>
+      <div class="thing3">
       <h3 class="step3">Spread the word to save more lives.</h3>
      <img class="small-4 medium-3 large-2" src="images/speaker.svg" alt="speaker icon">
+     </div>
       </div>
       </div>
       </section>

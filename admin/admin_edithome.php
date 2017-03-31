@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
 
     require_once("phpscripts/init.php");
-	//confirm_logged_in();
+	confirm_logged_in();
 	
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
@@ -25,11 +25,25 @@
 
 <body>
 
-<h1>Edit All</h1>
+
+<h1>Edit Home Page</h1>
 
 <?php echo single_edit($tbl, $col, $id); ?>
 
-<a href="../admin_index.php">Back</a>
+<div class="text-center"><a href="../admin_index.php">Back</a></div>
+
+ <footer>
+      <?php
+        include('../includes/footer.html');
+        ?>
+</footer>
+
+
+ <script src="../js/vendor/jquery.js"></script>
+ <script src="../js/vendor/foundation.min.js"></script>
+ <script src="../js/vendor/what-input.js"></script>
+ <script src="../js/fix.js"></script>
+
 
 
 </body>

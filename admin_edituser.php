@@ -11,7 +11,6 @@
 
 
 	if(isset($_POST['submit'])) {
-		//echo works;
 		$fname = trim($_POST['fname']);
 		$lname = trim($_POST['lname']);
 		$username = trim($_POST['username']);
@@ -37,9 +36,6 @@
 
 <body>
 
-	<?php
-	include('includes/nav.html');
-	 ?>
 
 <div class="container">
 
@@ -75,8 +71,6 @@
 <div class="stack">
 <label>Password:</label>
 <input name="password" type="text" value="<?php echo $populate['user_hash'];?>">
-
-<!--I'd probably have to write a function that would decode encrypted passwords from the salt + hash then re-encrypt the NEW password like I attempted with the login function, but I'll keep this simple for now.-->
 </div>
 
 <input class="stack importantbut submit" type="submit" name="submit" value="Edit User">
@@ -84,20 +78,22 @@
 </form>
 
 
-<a class="stack centertext link linkhover" href="admin_index.php">Back to Admin Panel</a>
+<div class="text-center"><a class="stack centertext link linkhover" href="admin_index.php">Back to Admin Panel</a></div>
 
 </section>
 
 </div>
 
-<?php
-include('includes/footer.html');
- ?>
+ <footer>
+      <?php
+        include('includes/footer.html');
+        ?>
+</footer>
 
 
      <script src="js/vendor/jquery.js"></script>
      <script src="js/vendor/foundation.min.js"></script>
      <script src="js/vendor/what-input.js"></script>
-     <script src="js/app.js"></script>
+     <script src="js/fix.js"></script>
 </body>
 </html>

@@ -143,7 +143,7 @@ httpRequest.open('GET', 'admin/phpscripts/get_vid.php' + '?vid_id=' + evt.target
 httpRequest.send();	
 
 nametext.innerHTML = names[evt.target.className];
-	
+
 }
 
 function loadstoryvid(){

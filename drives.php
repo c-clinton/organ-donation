@@ -1,7 +1,18 @@
+
+<?php
+
+	include('admin/phpscripts/connect.php');
+	include('admin/phpscripts/read.php');
+
+		$tbl = "tbl_driveslist";
+		$getDrives = getAll($tbl);
+
+
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved - Start A Drive - Be A Donor</title>
@@ -49,9 +60,9 @@
  	<button class="button">Learn More</button>
    <button class="button">Start Your Own</button>
    <h3 class="h3">How Do I Get Involved?</h3>
-   <p class="text2">First, you'll have to create a user profile and then you can create a page for your registration drive. There, your friends and family can read why you think organ and tissue donation is important and click to register their own consent. It's easy to create your own page. If you need help, check out the below tools and resources. The registration overview document provides you with important tips in getting started and the do’s and don’ts of running a registration drive.
+   <p class="text2">First, you'll have to create a user profile and then you can create a page for your registration drive. There, your friends and family can read why you think organ and tissue donation is important and click to register their own consent. It's easy to create your own page. If you need help, check out the below tools and resources. The registration overview document provides you with important tips in getting started and the do&rsquo;s and don&rsquo;ts of running a registration drive.
 <br><br>
-The registration overview document provides you with important tips in getting started and the do’s and don’ts of running a registration drive.</p>
+The registration overview document provides you with important tips in getting started and the do&rsquo;s and don&rsquo;ts of running a registration drive.</p>
    <a class="green">Download a registration overview</a>
    </div>
 
@@ -66,7 +77,7 @@ The registration overview document provides you with important tips in getting s
    <h3 class="h3">How Do I Get Involved?</h3>
    <p class="text2">First, start by talking with your company or community group about starting a drive. Be the champion of your drive with these tools and resources. The drive toolkit provides materials to start a drive for your workplace or social group. The toolkit includes email templates, social media posts, quick facts and much more. <a class="green">Download the drive toolkit</a>
 <br><br>
-Click the link below to view a collection of success stories from other organizations’ drives. <br><a class="green">Download successful drive stories</a></p>
+Click the link below to view a collection of success stories from other organizations&rsquo; drives. <br><a class="green">Download successful drive stories</a></p>
    </div>
    </div>
     </section>
@@ -83,17 +94,17 @@ Click the link below to view a collection of success stories from other organiza
     <div class="hide-for-small-only medium-12 medium-centered columns">
      <h3 class="hide-for-small-only text-center" id="what">What Is A Registration Drive?</h3>
    <img src="images/memo.png" alt="memo" class="hide-for-small-only medium-6 columns">
-   <p class="text2 hide-for-small-only medium-6 columns">It’s the way we’re asking Ontarians to help spread the word about the importance of registering consent for organ and tissue donation. People are more likely to register if those close to them have registered and have asked them to do the same.</p>
+   <p class="text2 hide-for-small-only medium-6 columns">It&rsquo;s the way we&rsquo;re asking Ontarians to help spread the word about the importance of registering consent for organ and tissue donation. People are more likely to register if those close to them have registered and have asked them to do the same.</p>
    </div>
 
    <h3 class="show-for-small-only">What Is A Registration Drive?</h3>
-   <p class="text2">It’s the way we’re asking Ontarians to help spread the word about the importance of registering consent for organ and tissue donation. People are more likely to register if those close to them have registered and have asked them to do the same.</p>
+   <p class="text2">It&rsquo;s the way we&rsquo;re asking Ontarians to help spread the word about the importance of registering consent for organ and tissue donation. People are more likely to register if those close to them have registered and have asked them to do the same.</p>
 <br>
 <h3 class="medium-12 medium-centered columns" id="how">How Does It Work?</h3>
-<p class="text2">An online registration drive can be started by a person or an organization (i.e. a Company or Community Group). You’ll be setting up a page in which you can state why organ and tissue donation is important to you. Once you’ve set up a page, you can share it to encourage your friends, family members and colleagues to register.</p>
+<p class="text2">An online registration drive can be started by a person or an organization (i.e. a Company or Community Group). You&rsquo;ll be setting up a page in which you can state why organ and tissue donation is important to you. Once you&rsquo;ve set up a page, you can share it to encourage your friends, family members and colleagues to register.</p>
 <br>
 <h3 id="why">Why Start A Drive?</h3>
-<p class="text2">Though most Ontarians believe that organ and tissue donation is a good thing, only about a quarter of us are actually registered. Some communities in Ontario have a registration rate of around 10%. That’s why we need your help to encourage those you know to register.</p>
+<p class="text2">Though most Ontarians believe that organ and tissue donation is a good thing, only about a quarter of us are actually registered. Some communities in Ontario have a registration rate of around 10%. That&rsquo;s why we need your help to encourage those you know to register.</p>
 </div>
 
 
@@ -105,10 +116,10 @@ Click the link below to view a collection of success stories from other organiza
 
    <ul class="no-bullet" id="tips">
    <li><img src="images/speaker.svg" alt="spread the word" width="70" height="70"><br><strong>Spread The Word</strong><br>Tell your employees, members or colleagues to share the drive.</li>
-   <li><img src="images/people.svg" alt="spread the word" width="70" height="70"><br><strong>Show Your Commitment</strong><br>Post the beadonor.ca logo to your organization’s website and provide a link to your drive’s page. You can also add it to other communications like emails, newsletters and on your social media pages.</li>
+   <li><img src="images/people.svg" alt="spread the word" width="70" height="70"><br><strong>Show Your Commitment</strong><br>Post the beadonor.ca logo to your organization&rsquo;s website and provide a link to your drive&rsquo;s page. You can also add it to other communications like emails, newsletters and on your social media pages.</li>
    <li><img src="images/trophy.svg" alt="spread the word" width="70" height="70"><br><strong>Compete!</strong><br>Try challenging another company or group to see who can get the most registrations.</li>
    <li><img src="images/upward_trend.svg" alt="spread the word" width="70" height="70"><br><strong>Keep Your Drive Active</strong><br>Talk regularly with your colleagues about your progress and encourage them to keep spreading the word.</li>
-   <li><img src="images/goals.svg" alt="spread the word" width="70" height="70"><br><strong>Set New Goals</strong><br>If you’ve reached your goal, don’t stop! Set the bar even higher.</li>
+   <li><img src="images/goals.svg" alt="spread the word" width="70" height="70"><br><strong>Set New Goals</strong><br>If you&rsquo;ve reached your goal, don&rsquo;t stop! Set the bar even higher.</li>
    </ul>
 
 
@@ -120,9 +131,9 @@ Click the link below to view a collection of success stories from other organiza
    <div class="small-12 small-centered medium-12 columns">
    <h2 class="h2">Measuring Your Success</h2>
    <img src="images/track.svg" width="100" height="100" alt="measure">
-   <p class="text2 small-10 small-centered columns">When you create a registration drive, you’ll have a page on beadonor.ca that you can encourage your friends and family to visit. On your page is a counter that will track all the visits to the donor registration site that have come through your page.
+   <p class="text2 small-10 small-centered columns">When you create a registration drive, you&rsquo;ll have a page on beadonor.ca that you can encourage your friends and family to visit. On your page is a counter that will track all the visits to the donor registration site that have come through your page.
 <br><br>
-When you start a drive, you can include a goal. Depending on how many people are part of your social network (i.e. friends on Facebook and/or followers on Twitter), you could aim to send anywhere between 100 to 400 individuals to the registration site. You don’t have to set a goal, but it is a good way to motivate yourself to encourage more friends and family to register.</p>
+When you start a drive, you can include a goal. Depending on how many people are part of your social network (i.e. friends on Facebook and/or followers on Twitter), you could aim to send anywhere between 100 to 400 individuals to the registration site. You don&rsquo;t have to set a goal, but it is a good way to motivate yourself to encourage more friends and family to register.</p>
 
    <p class="emphasis"><strong>It's easy to start your own registration drive. Do it as an individual or on behalf of your company or community group.</strong></p>
     <button class="button">Start Your Own</button>
@@ -194,68 +205,42 @@ When you start a drive, you can include a goal. Depending on how many people are
 
 
 
- <section class="row text-center show-for-large" id="currentDrives2">
-   <div class="large-12 large-centered columns">
-   <h2 class="text-center h2"> Current Drives: </h2>
+   <section class="row text-center show-for-large" id="currentDrives2">
+     <div class="large-12 large-centered columns">
+     <h2 class="text-center h2"> Current Drives: </h2>
 
- <table>
-  <thead>
-    <tr>
-      <th width="200">Name</th>
-      <th></th>
-      <th width="150">Date Started</th>
-      <th width="150">Total Clicks to Register</th>
-      <th width="150">Clicks This Month</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="images/likeme.png" alt="Amy"></td>
-      <td><a class="green driveLink" href="https://www.beadonor.ca/campaign/amy-1" target="_blank"><p>AMY: Beadonor.ca</p></a></td>
-      <td>2014-09-26 18:26:22</td>
-      <td>365</td>
-      <td>0</td>
-    </tr>
-     <tr>
-      <td><img src="images/aron.jpg" alt="Aron"></td>
-     <td><a class="green driveLink" href="https://www.beadonor.ca/campaign/aaron-jodoin" target="_blank"><p>Aaron Jodoin: Gift Of 8 Campaign</p></a></td>
-      <td>2012-04-19 12:10:28</td>
-      <td>704</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td><img src="images/likeme.png" alt="Arlene"></td>
-  <td> <a class="green driveLink" href="https://www.beadonor.ca/campaign/arlene-vandervelde" target="_blank"><p>ARLENE VANDERVELDE: Gift Of 8 Campaign</p></a></td>
-      <td>2013-06-06 14:13:27</td>
-      <td>630</td>
-      <td>0</td>
-    </tr>
-    <tr>
-        <td><img src="images/person.svg" alt="person"></td>
-      <td><a class="green driveLink" href="https://www.beadonor.ca/campaign/adam-haugh" target="_blank"><p>Adam Haugh: Gift Of 8 Campaign</p></a></td>
-        <td>2013-03-22 00:25:29</td>
-        <td>638</td>
-      <td>0</td>
-    </tr>
-    <tr>
-        <td><img src="images/adela.jpg" alt="Adela"></td>
-      <td><a class="green driveLink" href="https://www.beadonor.ca/campaign/adela-janczak" target="_blank"><p>Adela Janczak: Gift Of 8 Campaign</p></a></td>
-        <td>2012-06-20 02:58:06</td>
-        <td>645</td>
-      <td>0</td>
-    </tr>
+   <table>
+    <thead>
+      <tr>
+        <th width="200">Name</th>
+        <th></th>
+        <th width="150">Date Started</th>
+        <th width="150">Total Clicks to Register</th>
+        <th width="150">Clicks This Month</th>
+      </tr>
+    </thead>
+    <tbody>
 
-  </tbody>
-</table>
+   <?php
+       if(!is_string($getDrives)){
+           while($row = mysqli_fetch_array($getDrives)){
+             echo "<tr>";
+             echo "<td><img src=\"images/{$row['driveslist_img']}\"></td>";
+             echo "<td>{$row['driveslist_title']}</td>";
+             echo "<td>{$row['driveslist_datestarted']}</td>";
+             echo "<td>{$row['driveslist_clicksregister']}</td>";
+             echo "<td>{$row['driveslist_clicksmonth']}</td>";
+             echo "</tr>";
+           }
+         }else{
+           echo "<p>{$getDrives}</p>";
+         }
+   ?>
 
- <h3 class="sub switch">Switch to Organizational Drives</h3>
-
-
- <button class="button display">Display All</button>
-
+ </tbody>
+ </table>
  </div>
  </section>
-
 
   <section class="row text-center show-for-large" id="favDrives2">
    <div class="large-12 large-centered columns">
@@ -294,7 +279,7 @@ When you start a drive, you can include a goal. Depending on how many people are
     <tr>
        <td><img src="images/quilt.jpg" alt="quilt"></td>
       <td> <a class="green driveLink" href="https://www.beadonor.ca/campaign/msh" target="_blank"><p>The London Transplant Gift of Life Association Passionately Promotes Organ & Tissue Donation</p></a>
-<strong>Organizational Drive | London </strong><br><p class="text5">Since 2000, the London Transplant Gift of Life Association is devoted to promote organ and tissue donation, we equally encourage a conversation with one’s family. In 2005 we proudly created the first in Canada Gift of Life Donor and Recipient Quilts.The Quilts are our most important method of honouring donors and recipients, educating the public, demonstrating that illness does not discriminate, regardless of age, sex, race, or religion. </p><a class="green" href="#">Read More</a></td>
+<strong>Organizational Drive | London </strong><br><p class="text5">Since 2000, the London Transplant Gift of Life Association is devoted to promote organ and tissue donation, we equally encourage a conversation with one&rsquo;s family. In 2005 we proudly created the first in Canada Gift of Life Donor and Recipient Quilts.The Quilts are our most important method of honouring donors and recipients, educating the public, demonstrating that illness does not discriminate, regardless of age, sex, race, or religion. </p><a class="green" href="#">Read More</a></td>
       <td>+1000</td>
     </tr>
 

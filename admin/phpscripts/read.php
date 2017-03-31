@@ -28,7 +28,6 @@
 	function filterType($tbl1, $tbl2, $tbl3, $col1, $col2, $col3, $filter) {
 		include('connect.php');
 		$queryFilter = "SELECT * FROM {$tbl1}, {$tbl2}, {$tbl3} WHERE {$tbl1}.{$col1} = {$tbl3}.{$col1} AND {$tbl2}.{$col2} = {$tbl3}.{$col2} AND {$tbl2}.{$col3} = '{$filter}'";
-		//echo $queryFilter;
 		$runFilter = mysqli_query($link, $queryFilter);
 		
 		if($runFilter){
